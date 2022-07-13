@@ -1,0 +1,30 @@
+.products {
+  .container {
+    width: 100%;
+  }
+  &__lable {
+    color: $secondaryAccentColor;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  &__title {
+    color: $accentColor;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__name {
+  }
+  &__text {
+  }
+}
