@@ -1,0 +1,3 @@
+@mixin transitioned($attribute) {
+    transition: $attribute $durationTransition $animationTransition;
+}

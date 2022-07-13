@@ -1,0 +1,26 @@
+.button {
+    height: 44px;
+
+    border: 0;
+    border-radius: 20px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: $accentColor;
+    background-color: $primaryBgColor;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $focusBgColor;
+    }
+}
+.button--dark {
+    color: $primaryBgColor;
+    background-color: $accentColor;
+}
