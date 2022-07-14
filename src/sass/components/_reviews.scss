@@ -1,0 +1,25 @@
+// Reviews
+$gradientBgColor: #E1E1E1;
+$commentBgColor: #FAFAFA;
+
+.reviews__card {
+    width: 100%;
+    padding: 43px 50px 17px 50px;
+    // background-color: green;
+    background-image: repeating-linear-gradient(to bottom,
+    transparent,
+    transparent 30px,
+    var(--accentColor) 30px,
+    var(--accentColor) 31px);
+}
+
+// .reviews__card::before {
+// content: '';
+// }
+
+.reviews__comment{
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    color: var(--textColor);
+}
