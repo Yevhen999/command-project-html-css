@@ -1,4 +1,8 @@
 .products {
+  .container {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
   &__lable {
     color: $secondaryAccentColor;
     font-family: 'Titan One';
@@ -6,6 +10,8 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
+    text-align: center;
+    margin-bottom: 15px;
   }
   &__title {
     color: $accentColor;
@@ -15,13 +21,53 @@
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 148px;
   }
   &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
   }
   &__item {
+    max-width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 24px;
+    padding: 160px 53px 40px 53px;
+    gap: 32px;
   }
   &__name {
+    color: $primaryBgColor;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    &::after {
+      content: '.';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
   }
   &__text {
+    color: $primaryBgColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    letter-spacing: 0.04em;
+    text-align: center;
   }
+}
+.item-cream {
+  background-color: $heroBgColor;
+}
+.item-coffee {
+  background-color: $elementBgColor--first;
+}
+.item-milk {
+  background-color: $elementBgColor--second;
 }
