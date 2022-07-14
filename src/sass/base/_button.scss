@@ -10,27 +10,31 @@
     font-size: 14px;
     line-height: 1.28;
 
-    color: $accentColor;
-    background-color: $primaryBgColor;
+    color: $primaryBgColor;
+    background-color: $accentColor;
 
     cursor: pointer;
+
+}
+.button--light {
+    color: $accentColor;
+    background-color: $primaryBgColor;
 
     &:hover,
     &:focus {
         background-color: $focusBgColor;
     }
 }
-.button--dark {
-    color: $primaryBgColor;
-    background-color: $accentColor;
-}
 .button--centered {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 .button__icon {
     margin-left: 16px;
 
     width: 7px;
     height: 10px;
+}
+.button__icon--light {
+    fill: $primaryBgColor;
 }
