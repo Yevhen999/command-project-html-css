@@ -7,8 +7,8 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 1.28;
 
     color: $accentColor;
     background-color: $primaryBgColor;
@@ -23,4 +23,14 @@
 .button--dark {
     color: $primaryBgColor;
     background-color: $accentColor;
+}
+.button--centered {
+    display: flex;
+    align-items: flex-end;
+}
+.button__icon {
+    margin-left: 16px;
+
+    width: 7px;
+    height: 10px;
 }

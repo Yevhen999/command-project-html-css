@@ -1,0 +1,48 @@
+.about {
+    padding-top: 60px;
+
+    background-color: $secondaryBgColor;
+}
+.about__label {
+    margin-bottom: 24px;
+
+    font-family: 'Titan One';
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $secondaryAccentColor;
+}
+.about__title {
+    margin-bottom: 32px;
+
+    font-family: 'Titan One';
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $accentColor;
+}
+.about__box {
+
+}
+.about__img {
+    margin-bottom: 40px;
+}
+.about__content {
+    max-width: 220px;
+    line-height: 1.62;
+}
+.about__main-text {
+    margin-bottom: 24px;
+}
+.about__description {
+    margin-bottom: 20px;
+    color: $secondaryTextColor;
+}
+.about__button {
+    width: 176px;
+}
