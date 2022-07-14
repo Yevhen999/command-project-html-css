@@ -1,0 +1,76 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  height: 44px;
+  border: 0;
+  border-radius: 20px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #D41443;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.button:hover, .button:focus {
+  background-color: #ECEBEB;
+}
+
+.button--dark {
+  color: #FFFFFF;
+  background-color: #D41443;
+}/*# sourceMappingURL=index.css.map */
