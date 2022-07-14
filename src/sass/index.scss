@@ -1,8 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-<<<<<<< Updated upstream
-@import './components/common';
-=======
 // Utils
 @import './utils/vars';
 @import './utils/mixin';
@@ -13,8 +10,7 @@
 @import './base/body';
 @import './base/container';
 @import './base/button';
->>>>>>> Stashed changes
-
 
 // components
 @import './components/common';
+@import './components/products';
