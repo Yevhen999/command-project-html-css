@@ -2,24 +2,53 @@
 $gradientBgColor: #E1E1E1;
 $commentBgColor: #FAFAFA;
 
+
+.reviews__avatar {
+margin-left:  auto;
+margin-right: auto;
+margin-bottom: 75px;
+border-radius: 50%;
+}
+
 .reviews__card {
+    position: relative;
     width: 100%;
-    padding: 43px 50px 17px 50px;
-    // background-color: green;
     background-image: repeating-linear-gradient(to bottom,
     transparent,
     transparent 30px,
-    var(--accentColor) 30px,
-    var(--accentColor) 31px);
+    #E1E1E1 30px,
+    #E1E1E1 31px);
+
+    outline:1px solid purple;
+
+
 }
 
-// .reviews__card::before {
-// content: '';
-// }
+
+.reviews__card::before {
+content: '';
+position: absolute;
+top:-10%;
+left: 0;
+
+
+display: inline-block;
+width: 54px;
+height: 40px;
+background-color: red;
+
+}
 
 .reviews__comment{
     font-size: 12px;
     line-height: 255%;
+    text-align: center;
+    color: var(--textColor);
+}
+
+.reviews__nickname {
+    font-size: 16px;
+    line-height: 186%;
     text-align: center;
     color: var(--textColor);
 }
