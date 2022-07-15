@@ -10,26 +10,61 @@
   justify-content: space-between;
 }
 
-// .menu {
-//   @include font(500, 14px, 1.14, 0.02em);
-//   color: var(--color-black);
-//   display: flex;
-//   align-items: center;
-//   .menu-contacts {
-//     display: flex;
-//   }
-//   .link:active,
-//   .link:hover,
-//   .link:focus,
-//   .link:active {
-//     color: var(--color-hover);
-//   }
-// }
-// .menu-items {
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-// }
+.menu {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: $primaryBgColor;
+  display: flex;
+  align-items: center;
+  .menu-contacts {
+    display: flex;
+  }
+  .link:active,
+  .link:hover,
+  .link:focus,
+  .link:active {
+    color: $accentColor;
+  }
+}
+.menu-item {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.menu__btn_buy_name {
+  display: block;
+  width: 209px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  fill: $accentColor;
+  background: $primaryBgColor;
+  cursor: pointer;
+  border-radius: 22px;
+  border: none;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:active,
+  &:hover,
+  &:focus {
+    background: $accentColor;
+  }
+}
+
 // .menu-link {
 //   display: block;
 //   position: relative;
@@ -85,7 +120,7 @@
   display: flex;
   position: absolute;
   cursor: pointer;
-  fill: #000000;
+  fill: $accentColor;
   background-color: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus {
