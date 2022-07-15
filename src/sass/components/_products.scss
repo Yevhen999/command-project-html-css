@@ -37,6 +37,18 @@
     border-radius: 24px;
     padding: 160px 53px 40px 53px;
     gap: 32px;
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    top: -140px;
+    transition-property: transform;
+    transition-duration: 3000ms;
+    transition-timing-function: $animationTransition;
+    &:hover,
+    &:focus {
+      transform: rotateY(360deg);
+    }
   }
   &__name {
     color: $primaryBgColor;
@@ -46,12 +58,18 @@
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04em;
-    &::after {
-      content: '.';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-    }
+  }
+  &__dots {
+    display: flex;
+    gap: 4px;
+    margin-right: 10px;
+  }
+  &__dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: $primaryBgColor;
+    border-radius: 50%;
   }
   &__text {
     color: $primaryBgColor;
@@ -61,6 +79,29 @@
     letter-spacing: 0.04em;
     text-align: center;
   }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: inherit;
+    display: flex;
+    align-items: center;
+    fill: $accentColor;
+    background-color: $primaryBgColor;
+    &:hover,
+    &:focus {
+      background-color: $secondaryAccentColor;
+      fill: $primaryBgColor;
+    }
+  }
+}
+.btn-cofee:hover,
+.btn-cofee:focus {
+  background-color: $elementBgColor--first;
+}
+.btn-milk:hover,
+.btn-milk:focus {
+  background-color: $elementBgColor--second;
 }
 .item-cream {
   background-color: $heroBgColor;
