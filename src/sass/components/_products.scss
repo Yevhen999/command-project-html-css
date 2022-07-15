@@ -51,6 +51,9 @@
     @media screen and (min-width: 768px) {
       gap: 16px;
     }
+    @media screen and (min-width: 1200px) {
+      gap: 28px;
+    }
   }
   &__item {
     max-width: 280px;
