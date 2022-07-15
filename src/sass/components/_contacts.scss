@@ -1,0 +1,58 @@
+.contacts-card {
+  width: 280px;
+  height: 412px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  margin-bottom: 1px;
+}
+
+.contacts-title-orange {
+  color: $primaryBgColor;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  width: 80px;
+  height: 16px;
+  background-color: $elementBgColor--first;
+  border-radius: 4px;
+}
+
+.contacts-place {
+  color: $textColor;
+
+  padding-top: 20px;
+}
+
+.contacts-text {
+  color: $secondaryTextColor;
+
+  padding-top: 8px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-timework {
+  color: $secondaryAccentColor;
+}
+
+.contacts-daywork__padding {
+  padding-top: 8px;
+}
+
+.contacts-timework__padding {
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-list {
+  display: flex;
+}
