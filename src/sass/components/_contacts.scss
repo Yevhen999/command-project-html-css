@@ -5,8 +5,6 @@
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-
-  margin-bottom: 1px;
 }
 
 .contacts-title-orange {
@@ -20,6 +18,20 @@
   width: 80px;
   height: 16px;
   background-color: $elementBgColor--first;
+  border-radius: 4px;
+}
+
+.contacts-title-green {
+  color: $primaryBgColor;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  width: 130px;
+  height: 16px;
+  background-color: $elementBgColor--second;
   border-radius: 4px;
 }
 
@@ -39,20 +51,54 @@
   border-bottom: 1px solid #e1e1e1;
 }
 
-.contacts-timework {
+.contacts-firsttime,
+.contacts-secondtime {
   color: $secondaryAccentColor;
 }
 
-.contacts-daywork__padding {
-  padding-top: 8px;
+.contacts-firsttime {
+  padding-bottom: 8px;
 }
 
-.contacts-timework__padding {
+.contacts-secondtime {
   padding-bottom: 24px;
+  margin-bottom: 24px;
 
   border-bottom: 1px solid #e1e1e1;
 }
 
-.contacts-list {
-  display: flex;
+.contacts-linktell,
+.contacts-linkmail {
+  color: $secondaryTextColor;
+  text-decoration: none;
+}
+
+.contacts-linktell:hover {
+  color: $accentColor;
+}
+
+.contacts-linkmail:hover {
+  color: $accentColor;
+}
+
+.contacts-btn-map {
+  width: 162px;
+  height: 44px;
+  font-weight: 700;
+  color: $primaryBgColor;
+
+  background: #d41342;
+  border: none;
+  border-radius: 22px;
+}
+
+.contacts-btn-fran {
+  width: 162px;
+  height: 44px;
+  font-weight: 700;
+  color: $accentColor;
+
+  background: $primaryBgColor;
+  border: none;
+  border-radius: 22px;
 }
