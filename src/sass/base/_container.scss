@@ -3,4 +3,18 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media screen and (min-width: $minMobWidth) {
+        width: $minMobWidth;
+    }
+
+    @media screen and (min-width: $minTabletWidth) {
+        width: $minTabletWidth;
+    }
+
+    @media screen and (min-width: $minDeskWidth) {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: $minDeskWidth;
+    }
 }
