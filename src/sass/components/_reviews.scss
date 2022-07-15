@@ -16,8 +16,8 @@ border-radius: 50%;
     background-image: repeating-linear-gradient(to bottom,
     transparent,
     transparent 30px,
-    #E1E1E1 30px,
-    #E1E1E1 31px);
+    $gradientBgColor 30px,
+    $gradientBgColor 31px);
 
     outline:1px solid purple;
 }
@@ -26,8 +26,9 @@ border-radius: 50%;
 .reviews__card::before {
 content: '';
 position: absolute;
-top:-10%;
+top:-15%;
 left: 0;
+z-index: -1;
 
 
 display: inline-block;
@@ -41,12 +42,12 @@ background-color: red;
     font-size: 12px;
     line-height: 255%;
     text-align: center;
-    color: var(--textColor);
+    color: $textColor;
 }
 
 .reviews__nickname {
     font-size: 16px;
     line-height: 186%;
     text-align: center;
-    color: var(--textColor);
+    color: $textColor;
 }
