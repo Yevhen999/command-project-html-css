@@ -5,6 +5,16 @@
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  padding: 40px 32px;
+}
+
+.contacts-card:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-card:last-child {
+  margin-bottom: 32px;
 }
 
 .contacts-title-orange {
@@ -81,6 +91,10 @@
   color: $accentColor;
 }
 
+.contacts-btn:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .contacts-btn-map {
   width: 162px;
   height: 44px;
@@ -101,4 +115,9 @@
   background: $primaryBgColor;
   border: none;
   border-radius: 22px;
+}
+
+.ht {
+  justify-content: center;
+  align-content: center;
 }
