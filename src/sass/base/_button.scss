@@ -1,5 +1,5 @@
 .button {
-    height: 44px;
+    padding: 12px 36px;
 
     border: 0;
     border-radius: 20px;
@@ -14,6 +14,10 @@
     background-color: $accentColor;
 
     cursor: pointer;
+
+    @media screen and (min-width: $minTabletWidth) {
+        font-size: 16px;
+    }
 
 }
 .button--light {
