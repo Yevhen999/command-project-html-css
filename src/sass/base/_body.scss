@@ -7,4 +7,8 @@ body {
     
     color: $textColor;
     background-color: $primaryBgColor;
+
+    @media screen and (min-width: $minTabletWidth) {
+        font-size: 14px;
+    }
 }
