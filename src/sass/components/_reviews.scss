@@ -11,8 +11,19 @@ $sliderDotColor: #D9D9D9;
 
 .reviews__card{
     padding: 0 50px;
-    // outline:1px solid purple;
+    padding-bottom: 25px;
+    outline:1px solid teal;
+    height: auto;
 
+    @media screen and (min-width: 768px) {
+            padding: 0 48px; 
+            padding-bottom: 25px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            padding: 0 173px;
+            padding-bottom: 25px;
+        }
 }
 .reviews__avatar {
     margin-left:  auto;
@@ -30,18 +41,29 @@ $sliderDotColor: #D9D9D9;
     $gradientBgColor 30px,
     $gradientBgColor 31px);
 
-    padding-left: 13px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 8px;
+    padding-bottom: 10px;
     margin-bottom: 53px;
 
     // outline:1px solid purple;
+
+    @media screen and (min-width: 768px) {
+            padding-left: 45px;
+            padding-right: 49px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            padding-left: 36px;
+            padding-right: 35px;
+        }
 }
 
 
 .reviews__box::before {
     content: '';
     position: absolute;
-    top:-15%;
+    top:-15px;
     left: 0;
     z-index: -1;
 
@@ -59,6 +81,16 @@ $sliderDotColor: #D9D9D9;
     line-height: 255%;
     text-align: center;
     color: $textColor;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 216%;
+        }
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 186%;
+        }
 }
 
 .reviews__user{
@@ -75,12 +107,11 @@ $sliderDotColor: #D9D9D9;
     line-height: 186%;
     text-align: center;
     color: $textColor;
-    margin-bottom: 50px;
 }
 .reviews__nickname::before {
     content: '';
     position: absolute;
-    top: -75%;
+    top: -15px;
     left: 50%;
     transform: translate(-50%, 0%);
     // z-index: -1;
@@ -99,7 +130,7 @@ $sliderDotColor: #D9D9D9;
     position: relative;
 }
 .swiper-pagination {
-    // position: absolute;
+    position: absolute;
     // bottom: -20px;
     // right: 50%;
     // height: 20px;
@@ -109,6 +140,13 @@ $sliderDotColor: #D9D9D9;
     margin: 0;
     transform: translate3d(0, 5px, 0);
 }
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 0px;
+}
+
+
 .swiper-pagination-bullet {
     // padding: 10px 10px;
     // border-radius: 50%;
