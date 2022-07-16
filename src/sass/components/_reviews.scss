@@ -72,6 +72,7 @@ $sliderDotColor: #D9D9D9;
 
     // outline: 1px solid purple;
 }
+
 .reviews__nickname {
     font-size: 16px;
     line-height: 186%;
@@ -92,10 +93,12 @@ $sliderDotColor: #D9D9D9;
     height: 4px;
     background-color: red;
 }
+
+
+// Slider__________________________________
 .mySwiper {
     position: relative;
 }
-// Slider
 .swiper-pagination {
     // position: absolute;
     // bottom: -20px;
