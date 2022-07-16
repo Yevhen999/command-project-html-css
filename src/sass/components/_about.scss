@@ -98,19 +98,19 @@
     @media screen and (min-width: $minDeskWidth) {
         margin-right: 100px;
 
-        width: 500px;
+        max-width: 500px;
     }
 }
 .about__content {
-    // max-width: 220px;
     line-height: 1.62;
 
     @media screen and (max-width: $maxMobWidth) {
         max-width: 220px;
     }
 
-    @media screen and (max-width: $minDeskWidth) {
+    @media screen and (min-width: $minDeskWidth) {
         padding-top: 90px;
+        max-width: 463px;
     }
 
 }
@@ -120,10 +120,8 @@
 .about__description {
     margin-bottom: 20px;
     color: $secondaryTextColor;
-}
-.about__button {
-    // width: 176px;
-    @media screen and (min-width: $minTabletWidth) {
-        margin-top: 40px;
-    }
+
+    @media screen and (min-width: $minDeskWidth) {
+            margin-bottom: 40px;
+        }
 }
