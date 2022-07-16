@@ -6,23 +6,19 @@ $sliderDotColor: #D9D9D9;
 .container-reviews {
     padding-top: 60px;
     padding-bottom: 60px;
-    // background-color: grey;
 }
 
 .reviews__card{
-    padding: 0 50px;
-    padding-bottom: 25px;
-    outline:1px solid teal;
+    padding: 0 50px 30px 50px;
+    padding-bottom: 30px;
     height: auto;
 
-    @media screen and (min-width: 768px) {
-            padding: 0 48px; 
-            padding-bottom: 25px;
+    @media screen and (min-width: 768px) { 
+            padding: 0 48px 30px 48px;
         }
     
     @media screen and (min-width: 1200px) {
-            padding: 0 173px;
-            padding-bottom: 25px;
+            padding: 0 173px 30px  173px;
         }
 }
 .reviews__avatar {
@@ -45,8 +41,6 @@ $sliderDotColor: #D9D9D9;
     padding-right: 8px;
     padding-bottom: 10px;
     margin-bottom: 53px;
-
-    // outline:1px solid purple;
 
     @media screen and (min-width: 768px) {
             padding-left: 45px;
@@ -71,7 +65,6 @@ $sliderDotColor: #D9D9D9;
     display: inline-block;
     width: 54px;
     height: 40px;
-    // background-color: red;
     background-image: url(/src/images/review/quotes.svg);
     background-repeat: no-repeat;
 }
@@ -98,8 +91,6 @@ $sliderDotColor: #D9D9D9;
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
-
-    // outline: 1px solid purple;
 }
 
 .reviews__nickname {
@@ -114,33 +105,15 @@ $sliderDotColor: #D9D9D9;
     top: -15px;
     left: 50%;
     transform: translate(-50%, 0%);
-    // z-index: -1;
 
-    // display: inline-block;
     width: 34px;
     height: 4px;
-    // background-color: gray;
     background-image: url(/src/images/review/dots.svg);
     background-repeat: no-repeat;
 }
 
 
 // Slider__________________________________
-.mySwiper {
-    position: relative;
-}
-.swiper-pagination {
-    position: absolute;
-    // bottom: -20px;
-    // right: 50%;
-    // height: 20px;
-    margin-top: 100px;
-    width: auto;
-    left: auto;
-    margin: 0;
-    transform: translate3d(0, 5px, 0);
-}
-
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal{
     bottom: 0px;
@@ -148,18 +121,13 @@ $sliderDotColor: #D9D9D9;
 
 
 .swiper-pagination-bullet {
-    // padding: 10px 10px;
-    // border-radius: 50%;
     width: 14px;
     height: 14px;
-    // text-align: center;
-    // line-height: 30px;
     opacity: 1;
     background: $sliderDotColor;
 }
 
 .swiper-pagination-bullet-active {
-    // color: #fff;
     background: transparent;
     width: 18px;
     height: 18px;
