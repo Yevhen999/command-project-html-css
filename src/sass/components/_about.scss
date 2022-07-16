@@ -121,7 +121,7 @@
     margin-bottom: 20px;
     color: $secondaryTextColor;
 
-    @media screen and (min-width: $minDeskWidth) {
+    @media screen and (min-width: $minTabletWidth) {
             margin-bottom: 40px;
         }
 }
