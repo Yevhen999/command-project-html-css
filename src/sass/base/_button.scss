@@ -9,15 +9,16 @@
     font-size: 14px;
     line-height: 1.28;
 
-    color: $primaryBgColor;
-    background-color: $accentColor;
-
     cursor: pointer;
 
     @media screen and (min-width: $minTabletWidth) {
         font-size: 16px;
     }
 
+}
+.button--dark {
+    color: $primaryBgColor;
+    background-color: $accentColor;
 }
 
 .button--light {
@@ -32,6 +33,7 @@
 
 .button--centered {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
