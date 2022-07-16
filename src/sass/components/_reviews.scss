@@ -1,6 +1,7 @@
 // Reviews
 $gradientBgColor: #E1E1E1;
 $commentBgColor: #FAFAFA;
+$sliderDotColor: #D9D9D9;
 
 .container-reviews {
     padding-top: 60px;
@@ -8,14 +9,13 @@ $commentBgColor: #FAFAFA;
     // background-color: grey;
 }
 
-.review__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+// .review__list {
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+// }
 .reviews__card{
     padding: 0 50px;
-
     // outline:1px solid purple;
 
 }
@@ -37,7 +37,6 @@ $commentBgColor: #FAFAFA;
 
     padding-left: 10px;
     padding-right: 10px;
-
     margin-bottom: 53px;
 
     // outline:1px solid purple;
@@ -78,6 +77,7 @@ $commentBgColor: #FAFAFA;
     line-height: 186%;
     text-align: center;
     color: $textColor;
+    margin-bottom: 50px;
 }
 .reviews__nickname::before {
     content: '';
@@ -91,4 +91,38 @@ $commentBgColor: #FAFAFA;
     width: 34px;
     height: 4px;
     background-color: red;
+}
+.mySwiper {
+    position: relative;
+}
+// Slider
+.swiper-pagination {
+    // position: absolute;
+    // bottom: -20px;
+    // right: 50%;
+    // height: 20px;
+   margin-top: 100px;
+    width: auto;
+    left: auto;
+    margin: 0;
+    transform: translate3d(0, 5px, 0);
+}
+.swiper-pagination-bullet {
+    // padding: 10px 10px;
+    // border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    // text-align: center;
+    // line-height: 30px;
+    opacity: 1;
+    background: $sliderDotColor;
+}
+
+.swiper-pagination-bullet-active {
+    // color: #fff;
+    background: transparent;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-image: url(/src/images/review/house.svg);
 }
