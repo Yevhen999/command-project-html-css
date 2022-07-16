@@ -1,0 +1,149 @@
+.hero .container{
+    background-color: $heroBgColor;
+    position: relative;
+    max-width: 767px;
+    height: 502px;
+    margin: auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 1199px;
+    }
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.hero__title-text {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primaryBgColor;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+
+.hero__title-span {
+    color: $accentColor;
+}
+
+.hero__ice {
+    position: absolute;
+    margin-top: 92px;
+    margin-left: 97px;
+    width: 171px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 80px;
+        margin-left: 307px;
+    }
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.hero__b-e {
+    position: absolute;
+    margin-top: 83px;
+    margin-left: 16px;
+    width: 284px;
+    @media screen and (min-width: 768px) {
+        margin-top: 43px;
+        margin-left: 233px;
+    }
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.hero__title {
+
+    position: absolute;
+    margin-top: 194px;
+    z-index: 2;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 102px;
+        margin-bottom: 190px;
+        margin-left: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {}
+}
+
+
+.hero__numbers-img {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {}
+}
+
+
+
+.hero__btn {
+    left: 20px;
+    top: 320px;
+    position: absolute;
+    display: flex;
+    margin-right: 8px;
+}
+
+.hero__btn--link {
+    
+    margin-right: 8px;
+    font-size: 8px;
+    line-height: 1.25;
+}
+.hero__btn--question{
+    
+    font-size: 8px;
+    line-height: 1.25;
+}
+
+.hero__span {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.hero__milk {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.hero__gerl {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.hero__text {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {}
+}
