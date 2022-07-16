@@ -1,3 +1,7 @@
+.contacts {
+  background-image: linear-gradient(#ffffff 21%, $secondaryBgColor 21%);
+}
+
 .contacts-card {
   width: 280px;
   height: 412px;
@@ -117,7 +121,6 @@
   border-radius: 22px;
 }
 
-.ht {
-  justify-content: center;
-  align-content: center;
+.contacts-btn-fran:hover {
+  background-color: $focusBgColor;
 }
