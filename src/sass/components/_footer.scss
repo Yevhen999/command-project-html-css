@@ -45,7 +45,7 @@
 
    color: $secondaryAccentColor;
 
-   @media screen and (max-width: $maxTabletWidth) {
+   @media screen and (min-width: $minTabletWidth) and (max-width: $maxTabletWidth) {
       font-size: 26px;
       line-height: 1.15;
       letter-spacing: 0.04em;
@@ -106,33 +106,22 @@
 
    color: #FEA5BB;
 
-   &:hover .icon--github,
-   &:focus .icon--github{
-      fill: black;
+   &:hover,
+   &:focus{
+      color: $accentColor;
    }
 
-   &:hover .icon--facebook,
-   &:focus .icon--facebook {
-      fill: #3b5998;
-   }
-
-   &:hover .icon--telegram,
-   &:focus .icon--telegram {
-      fill:#2196F3;
-      }
+      transition: color 250ms $animationTransition;
    }
 
 .list-actions__icon{
    fill: currentColor;
-
-   transition: fill 250ms $animationTransition;
 }
 
 .footer-text{
    font-style: normal;
    font-weight: 700;
    line-height: 1.86;
-   text-align: right;
 
    @media screen and (min-width: $minTabletWidth) {
       font-size: 14px;
