@@ -1,11 +1,10 @@
 .button {
-    height: 44px;
+    padding: 12px 36px;
 
     border: 0;
-    border-radius: 20px;
+    border-radius: 22px;
 
     font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
@@ -15,7 +14,12 @@
 
     cursor: pointer;
 
+    @media screen and (min-width: $minTabletWidth) {
+        font-size: 16px;
+    }
+
 }
+
 .button--light {
     color: $accentColor;
     background-color: $primaryBgColor;
@@ -25,16 +29,20 @@
         background-color: $focusBgColor;
     }
 }
+
 .button--centered {
     display: flex;
     align-items: center;
 }
+
 .button__icon {
+    stroke: $accentColor;
     margin-left: 16px;
 
     width: 7px;
     height: 10px;
 }
+
 .button__icon--light {
-    fill: $primaryBgColor;
+    stroke: $primaryBgColor;
 }
