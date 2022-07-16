@@ -54,7 +54,9 @@ $sliderDotColor: #D9D9D9;
     display: inline-block;
     width: 54px;
     height: 40px;
-    background-color: red;
+    // background-color: red;
+    background-image: url(/src/images/review/quotes.svg);
+    background-repeat: no-repeat;
 }
 
 .reviews__comment{
@@ -91,7 +93,9 @@ $sliderDotColor: #D9D9D9;
     // display: inline-block;
     width: 34px;
     height: 4px;
-    background-color: red;
+    // background-color: gray;
+    background-image: url(/src/images/review/dots.svg);
+    background-repeat: no-repeat;
 }
 
 
@@ -104,7 +108,7 @@ $sliderDotColor: #D9D9D9;
     // bottom: -20px;
     // right: 50%;
     // height: 20px;
-   margin-top: 100px;
+    margin-top: 100px;
     width: auto;
     left: auto;
     margin: 0;
