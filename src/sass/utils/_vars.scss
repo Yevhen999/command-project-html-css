@@ -18,3 +18,9 @@ $focusBgColor: #ECEBEB;
 $durationTransition: 250ms;
 $animationTransition: cubic-bezier(0.4, 0, 0.2, 1);
 
+//break point
+$minMobWidth: 320px;
+$maxMobWidth: 767px;
+$minTabletWidth: 768px;
+$maxTabletWidth: 1199px;
+$minDeskWidth: 1200px;
