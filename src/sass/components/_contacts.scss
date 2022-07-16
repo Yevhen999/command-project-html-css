@@ -1,0 +1,104 @@
+.contacts-card {
+  width: 280px;
+  height: 412px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts-title-orange {
+  color: $primaryBgColor;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  width: 80px;
+  height: 16px;
+  background-color: $elementBgColor--first;
+  border-radius: 4px;
+}
+
+.contacts-title-green {
+  color: $primaryBgColor;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  width: 130px;
+  height: 16px;
+  background-color: $elementBgColor--second;
+  border-radius: 4px;
+}
+
+.contacts-place {
+  color: $textColor;
+
+  padding-top: 20px;
+}
+
+.contacts-text {
+  color: $secondaryTextColor;
+
+  padding-top: 8px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-firsttime,
+.contacts-secondtime {
+  color: $secondaryAccentColor;
+}
+
+.contacts-firsttime {
+  padding-bottom: 8px;
+}
+
+.contacts-secondtime {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-linktell,
+.contacts-linkmail {
+  color: $secondaryTextColor;
+  text-decoration: none;
+}
+
+.contacts-linktell:hover {
+  color: $accentColor;
+}
+
+.contacts-linkmail:hover {
+  color: $accentColor;
+}
+
+.contacts-btn-map {
+  width: 162px;
+  height: 44px;
+  font-weight: 700;
+  color: $primaryBgColor;
+
+  background: #d41342;
+  border: none;
+  border-radius: 22px;
+}
+
+.contacts-btn-fran {
+  width: 162px;
+  height: 44px;
+  font-weight: 700;
+  color: $accentColor;
+
+  background: $primaryBgColor;
+  border: none;
+  border-radius: 22px;
+}
