@@ -235,6 +235,7 @@
     // transform: translate(-50%, -50%);
   }
 }
+
 .mobile-menu_button {
   display: flex;
   // align-items: center;
@@ -322,13 +323,9 @@
   padding: 0px 37px;
   margin-top: 10px;
   box-sizing: content-box;
-  // margin-left: 32px;
-  // margin-right: 32px;
-  // margin: 0 auto;
+
   background: $primaryBgColor;
-  // @media screen and (max-width: 320px) {
-  //   display: none;
-  // }
+
   @media screen and (min-width: 1200px) {
     margin-left: 0;
   }
@@ -353,10 +350,6 @@
       fill: $primaryBgColor;
     }
   }
-
-  // @media screen and (max-width: 320px) {
-  //   display: none;
-  // }
 }
 .mobile-menu__btn_buy_name {
   padding: 10px 0px;
@@ -368,10 +361,6 @@
   line-height: 1.31;
   display: flex;
   color: $accentColor;
-
-  // @media screen and (max-width: 320px) {
-  //   display: none;
-  // }
 }
 
 /*list - убирает точки перед селектарами  */
