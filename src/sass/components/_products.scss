@@ -1,4 +1,8 @@
 .products {
+  .container {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
   &__lable {
     color: $secondaryAccentColor;
     font-family: 'Titan One';
@@ -6,6 +10,18 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
+    text-align: center;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 1.13;
+      margin-bottom: 16px;
+    }
   }
   &__title {
     color: $accentColor;
@@ -15,13 +31,134 @@
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 148px;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      margin-bottom: 158px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      letter-spacing: 0.06em;
+      line-height: 1.14;
+      margin-bottom: 281px;
+    }
   }
   &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    @media screen and (min-width: 768px) {
+      gap: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 28px;
+    }
   }
   &__item {
+    max-width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 24px;
+    padding: 160px 40px 40px 40px;
+    gap: 32px;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      max-width: 224px;
+      padding: 118px 32px 40px 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 368px;
+      padding: 165px 64px 60px 64px;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: -140px;
+    transition-property: transform;
+    transition-duration: 3000ms;
+    transition-timing-function: $animationTransition;
+    &:hover,
+    &:focus {
+      transform: rotateY(360deg);
+    }
+    @media screen and (min-width: 768px) {
+      top: -138px;
+    }
+    @media screen and (min-width: 1200px) {
+      top: -261px;
+    }
   }
   &__name {
+    color: $primaryBgColor;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+  }
+  &__dots {
+    display: flex;
+    gap: 4px;
+    margin: 30px;
+  }
+  &__dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: $primaryBgColor;
+    border-radius: 50%;
   }
   &__text {
+    color: $primaryBgColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    letter-spacing: 0.04em;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      line-height: 1.76;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: inherit;
+    display: flex;
+    align-items: center;
+    fill: $accentColor;
+    background-color: $primaryBgColor;
+    &:hover,
+    &:focus {
+      background-color: $secondaryAccentColor;
+      fill: $primaryBgColor;
+    }
+  }
+}
+.btn-cofee:hover,
+.btn-cofee:focus {
+  background-color: $elementBgColor--first;
+}
+.btn-milk:hover,
+.btn-milk:focus {
+  background-color: $elementBgColor--second;
+}
+.item-cream {
+  background-color: $heroBgColor;
+}
+.item-coffee {
+  background-color: $elementBgColor--first;
+}
+.item-milk {
+  background-color: $elementBgColor--second;
 }

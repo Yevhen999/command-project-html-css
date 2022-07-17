@@ -1,0 +1,136 @@
+// Reviews
+$gradientBgColor: #E1E1E1;
+$commentBgColor: #FAFAFA;
+$sliderDotColor: #D9D9D9;
+
+.container-reviews {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.reviews__card{
+    padding: 0 50px 30px 50px;
+    padding-bottom: 30px;
+    height: auto;
+
+    @media screen and (min-width: 768px) { 
+            padding: 0 48px 30px 48px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            padding: 0 173px 30px  173px;
+        }
+}
+.reviews__avatar {
+    margin-left:  auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    border-radius: 50%;
+}
+
+.reviews__box {
+    position: relative;
+    width: 100%;
+    background-image: repeating-linear-gradient(to bottom,
+    transparent,
+    transparent 30px,
+    $gradientBgColor 30px,
+    $gradientBgColor 31px);
+
+    padding-left: 15px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 53px;
+
+    @media screen and (min-width: 768px) {
+            padding-left: 45px;
+            padding-right: 49px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            padding-left: 36px;
+            padding-right: 35px;
+        }
+}
+
+
+.reviews__box::before {
+    content: '';
+    position: absolute;
+    top:-15px;
+    left: 0;
+    z-index: -1;
+
+
+    display: inline-block;
+    width: 54px;
+    height: 40px;
+    background-image: url(/src/images/review/quotes.svg);
+    background-repeat: no-repeat;
+}
+
+.reviews__comment{
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    color: $textColor;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 216%;
+        }
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 186%;
+        }
+}
+
+.reviews__user{
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.reviews__nickname {
+    font-size: 16px;
+    line-height: 186%;
+    text-align: center;
+    color: $textColor;
+}
+.reviews__nickname::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    width: 34px;
+    height: 4px;
+    background-image: url(/src/images/review/dots.svg);
+    background-repeat: no-repeat;
+}
+
+
+// Slider__________________________________
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 0px;
+}
+
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    background: $sliderDotColor;
+}
+
+.swiper-pagination-bullet-active {
+    background: transparent;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-image: url(/src/images/review/house.svg);
+}
