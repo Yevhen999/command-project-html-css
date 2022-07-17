@@ -9,6 +9,8 @@
     }
 
     @media screen and (min-width: $minTabletWidth) {
+        padding-left: 32px;
+        padding-right: 32px;
         width: $minTabletWidth;
     }
 

@@ -2,17 +2,42 @@
     padding-top: 60px;
 
     background-color: $secondaryBgColor;
+
+    @media screen and (min-width: $minDeskWidth) {
+        background-image: url(../images/about/about-bg-1200.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 100%
+    }
+}
+@media screen and (max-width: $maxMobWidth) {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .about {
+            background-image: url(../images/about/about-bg-1200@2x.png);
+        }
+    }
 }
 .about__label {
     margin-bottom: 24px;
 
     font-family: 'Titan One';
     font-size: 18px;
-    line-height: 1.17;
+    line-height: 1.15;
     text-align: center;
     text-transform: uppercase;
 
     color: $secondaryAccentColor;
+
+    @media screen and (min-width: $minTabletWidth) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: $minDeskWidth) {
+        font-size: 30px;
+    }
 }
 .about__title {
     margin-bottom: 32px;
@@ -25,16 +50,69 @@
     text-transform: uppercase;
 
     color: $accentColor;
+
+    @media screen and (min-width: $minTabletWidth) {
+        margin-bottom: 40px;
+
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: $minDeskWidth) {
+        margin-bottom: 60px;
+
+        font-size: 58px;
+    }
 }
 .about__box {
+    @media screen and (max-width: $maxMobWidth) {
+        background-image: url(../images/about/about-bg-320.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 74%;
+    }
 
+    @media screen and (min-width: $minTabletWidth) {
+        display: flex;
+    }
+}
+@media screen and (max-width: $maxMobWidth) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .about__box {
+            background-image: url(../images/about/about-bg-320@2x.png);
+        }
+    }
 }
 .about__img {
     margin-bottom: 40px;
+
+    max-width: 280px;
+
+    @media screen and (min-width: $minTabletWidth) {
+        margin-right: 32px;
+
+        max-width: 336px;
+    }
+
+    @media screen and (min-width: $minDeskWidth) {
+        margin-right: 100px;
+
+        max-width: 500px;
+    }
 }
 .about__content {
-    max-width: 220px;
     line-height: 1.62;
+
+    @media screen and (max-width: $maxMobWidth) {
+        max-width: 220px;
+    }
+
+    @media screen and (min-width: $minDeskWidth) {
+        padding-top: 90px;
+        max-width: 463px;
+    }
+
 }
 .about__main-text {
     margin-bottom: 24px;
@@ -42,7 +120,8 @@
 .about__description {
     margin-bottom: 20px;
     color: $secondaryTextColor;
-}
-.about__button {
-    width: 176px;
+
+    @media screen and (min-width: $minTabletWidth) {
+            margin-bottom: 40px;
+        }
 }

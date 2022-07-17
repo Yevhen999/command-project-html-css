@@ -1,10 +1,14 @@
 <section>
   <div class="container container-reviews">
     <div class="swiper mySwiper">
-      <div class="review__list swiper-wrapper">
-        <div class="reviews__card swiper-slide">
+      <ul class="review__list list swiper-wrapper">
+        <li class="reviews__card swiper-slide">
           <img
             class="reviews__avatar"
+            srcset="
+              /src/images/review/review_avatar1@1x.jpg 1x,
+              /src/images/review/review_avatar1@2x.jpg 2x
+            "
             src="/src/images/review/review_avatar1@1x.jpg"
             alt="customer avatar"
             width="85px"
@@ -20,11 +24,15 @@
           <div class="reviews__user">
             <p class="reviews__nickname">Emily, Los Angeles</p>
           </div>
-        </div>
+        </li>
 
-        <div class="reviews__card swiper-slide">
+        <li class="reviews__card swiper-slide">
           <img
             class="reviews__avatar"
+            srcset="
+              /src/images/review/review_avatar2@1x.jpg 1x,
+              /src/images/review/review_avatar2@2x.jpg 2x
+            "
             src="/src/images/review/review_avatar2@1x.jpg"
             alt="customer avatar"
             width="85px"
@@ -40,11 +48,15 @@
           <div class="reviews__user">
             <p class="reviews__nickname">Lisa, New York</p>
           </div>
-        </div>
+        </li>
 
-        <div class="reviews__card swiper-slide">
+        <li class="reviews__card swiper-slide">
           <img
             class="reviews__avatar"
+            srcset="
+              /src/images/review/review_avatar3@1x.jpg 1x,
+              /src/images/review/review_avatar3@2x.jpg 2x
+            "
             src="/src/images/review/review_avatar3@1x.jpg"
             alt="customer avatar"
             width="85px"
@@ -60,42 +72,14 @@
           <div class="reviews__user">
             <p class="reviews__nickname">Jennifer, Chicago</p>
           </div>
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+        </li>
+      </ul>
+      <!-- Стрілки -->
+      <!-- <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
+
+      <!-- Пагінація -->
       <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
-
-<!-- Підключити в шапку index.html -->
-<!-- Link Swiper's CSS -->
-<!-- <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    /> -->
-
-<!-- Підключити в index.html перед закриваючим тегом body -->
-<!-- Swiper JS -->
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-
-<!-- Initialize Swiper -->
-<!-- <script>
-      var swiper = new Swiper('.mySwiper', {
-        // cssMode: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + '</span>';
-          },
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
-    </script> -->

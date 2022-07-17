@@ -1,0 +1,258 @@
+.contacts {
+  background-image: linear-gradient(#ffffff 21%, $secondaryBgColor 21%);
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $minDeskWidth) {
+    padding-bottom: 120px;
+  }
+}
+
+.contacts__list {
+  @media screen and (min-width: $minTabletWidth) {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $minDeskWidth) {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 60px;
+  }
+}
+
+.contacts-card {
+  width: 280px;
+  height: 412px;
+
+  background: $primaryBgColor;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  padding: 40px 32px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    width: 224px;
+    height: 528px;
+  }
+
+  @media screen and (min-width: $minDeskWidth) {
+    width: 368px;
+    height: 538px;
+
+    padding: 40px 40px;
+  }
+}
+
+.contacts-card:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $minDeskWidth) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-card:last-child {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $minDeskWidth) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-title-orange {
+  color: $primaryBgColor;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  width: 80px;
+  height: 16px;
+  background-color: $elementBgColor--first;
+  border-radius: 4px;
+}
+
+.contacts-title-green {
+  color: $primaryBgColor;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  width: 130px;
+  height: 16px;
+  background-color: $elementBgColor--second;
+  border-radius: 4px;
+}
+
+.contacts-place {
+  color: $textColor;
+
+  padding-top: 20px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    padding-top: 32px;
+  }
+  @media screen and (min-width: $minDeskWidth) {
+    padding-top: 32px;
+  }
+}
+
+.contacts-text {
+  color: $secondaryTextColor;
+
+  padding-top: 8px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: $minTabletWidth) {
+    padding-top: 12px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    padding-top: 8px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.contacts-firsttime,
+.contacts-secondtime {
+  color: $secondaryAccentColor;
+}
+
+.contacts-firsttime {
+  padding-bottom: 8px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    padding-bottom: 12px;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    padding-bottom: 12px;
+  }
+}
+
+.contacts-secondtime {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: $minTabletWidth) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.contacts-linktell,
+.contacts-linkmail {
+  color: $secondaryTextColor;
+  text-decoration: none;
+}
+
+.contacts-linktell:hover {
+  color: $accentColor;
+}
+
+.contacts-linkmail:hover {
+  color: $accentColor;
+}
+
+.contacts-btn:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    margin-bottom: 0;
+    margin-right: 14.5px;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    margin-right: 12px;
+  }
+}
+
+.contacts-btn-map {
+  width: 162px;
+  height: 44px;
+  font-weight: 700;
+  color: $primaryBgColor;
+
+  background: #d41342;
+  border: none;
+  border-radius: 22px;
+}
+
+.contacts-btn-map:hover {
+  background-color: $secondaryAccentColor;
+}
+
+.contacts-btn-fran {
+  width: 162px;
+  height: 44px;
+  font-weight: 700;
+  color: $accentColor;
+
+  background: $primaryBgColor;
+  border: none;
+  border-radius: 22px;
+}
+
+.contacts-btn-fran:hover {
+  background-color: $focusBgColor;
+}
+
+.contacts-button {
+  text-align: center;
+
+  @media screen and (min-width: $minTabletWidth) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.btn-icon {
+  stroke: currentColor;
+  margin-left: 10px;
+}
+
+.contacts-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 245, 246, 0.5);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contacts-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
