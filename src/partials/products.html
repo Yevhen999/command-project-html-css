@@ -45,7 +45,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button type="button" class="products__btn btn-cream">
+        <button type="button" class="products__btn btn-cream" data-modal-open>
           <svg class="products__icon" widht="12" height="12">
             <use href="./images/prod.svg#icon-arrow"></use>
           </svg>
@@ -80,7 +80,7 @@
             sizes="280px"
             type="image/png"
           />
-          <img src="./images/products/products2-320.png " alt="ice cream" />
+          <img src="./images/products/products2-320.png " alt="ice coffee" />
         </picture>
         <h3 class="products__name">ice coffee</h3>
         <div class="products__dots">
@@ -93,7 +93,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button type="button" class="products__btn btn-cofee">
+        <button type="button" class="products__btn btn-cofee" data-modal-open>
           <svg class="products__icon" widht="12" height="12">
             <use href="./images/prod.svg#icon-arrow"></use>
           </svg>
@@ -128,7 +128,7 @@
             sizes="280px"
             type="image/png"
           />
-          <img src="./images/products/products3-320.png " alt="ice cream" />
+          <img src="./images/products/products3-320.png " alt="milkshakes" />
         </picture>
         <h3 class="products__name">milkshakes</h3>
         <div class="products__dots">
@@ -140,7 +140,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button type="button" class="products__btn btn-milk">
+        <button type="button" class="products__btn btn-milk" data-modal-open>
           <svg class="products__icon" widht="12" height="12">
             <use href="./images/prod.svg#icon-arrow"></use>
           </svg>
@@ -148,4 +148,203 @@
       </li>
     </ul>
   </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>
+        <svg class="icon-close">
+          <use href="./images/prod.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title products__name">ice cream</h2>
+      <picture class="products__img">
+        <source
+          srcset="
+            ./images/products/products1-1200.png    1x,
+            ./images/products/products1-1200@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          sizes="368px"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/products/products1-768.png    1x,
+            ./images/products/products1-768@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          sizes="224px"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/products/products1-320.png    1x,
+            ./images/products/products1-320@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          sizes="280px"
+          type="image/png"
+        />
+        <img src="./images/products/products1-320.png " alt="ice cream" />
+      </picture>
+      <ul class="list">
+        <li>
+          <h3 class="modal-link">Price</h3>
+          <p class="products__text">8$</p>
+        </li>
+        <li>
+          <h3 class="modal-link">ingredient</h3>
+          <p class="products__text">Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li>
+          <h3 class="modal-link">Detailed description</h3>
+          <p class="products__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            voluptatibus impedit hic numquam omnis maxime aliquam nulla sit
+            earum magnam rerum, quaerat praesentium dolore similique ipsum.
+            Aliquam aspernatur, nostrum repellat impedit officia quas explicabo
+            animi? Architecto nobis perferendis veritatis cumque enim repellat
+            iure magni omnis cupiditate quod, ipsam eos quos, deleniti
+            asperiores, ullam exercitationem placeat.
+          </p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+      </ul>
+      <button type="submit" class="button">Make an order</button>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal-cofee">
+      <button type="button" class="close-btn" data-modal-close>
+        <svg class="icon-close">
+          <use href="./images/prod.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <h2 class="modal-cofee__title products__name">ice cream</h2>
+      <picture class="products__img">
+        <source
+          srcset="
+            ./images/products/products1-1200.png    1x,
+            ./images/products/products1-1200@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          sizes="368px"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/products/products1-768.png    1x,
+            ./images/products/products1-768@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          sizes="224px"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/products/products1-320.png    1x,
+            ./images/products/products1-320@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          sizes="280px"
+          type="image/png"
+        />
+        <img src="./images/products/products1-320.png " alt="ice cream" />
+      </picture>
+      <ul class="list">
+        <li>
+          <h3 class="modal-cofee-link">Price</h3>
+          <p class="products__text">8$</p>
+        </li>
+        <li>
+          <h3 class="modal-cofee-link">ingredient</h3>
+          <p class="products__text">Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li>
+          <h3 class="modal-link">Detailed description</h3>
+          <p class="products__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            voluptatibus impedit hic numquam omnis maxime aliquam nulla sit
+            earum magnam rerum, quaerat praesentium dolore similique ipsum.
+            Aliquam aspernatur, nostrum repellat impedit officia quas explicabo
+            animi? Architecto nobis perferendis veritatis cumque enim repellat
+            iure magni omnis cupiditate quod, ipsam eos quos, deleniti
+            asperiores, ullam exercitationem placeat.
+          </p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+      </ul>
+      <button type="submit" class="button">Make an order</button>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>
+        <svg class="icon-close">
+          <use href="./images/prod.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <h2 class="modal-milk__title products__name">ice cream</h2>
+      <picture class="products__img">
+        <source
+          srcset="
+            ./images/products/products1-1200.png    1x,
+            ./images/products/products1-1200@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          sizes="368px"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/products/products1-768.png    1x,
+            ./images/products/products1-768@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          sizes="224px"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/products/products1-320.png    1x,
+            ./images/products/products1-320@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          sizes="280px"
+          type="image/png"
+        />
+        <img src="./images/products/products1-320.png " alt="ice cream" />
+      </picture>
+      <ul class="list">
+        <li>
+          <h3 class="modal-milk-link">Price</h3>
+          <p class="products__text">8$</p>
+        </li>
+        <li>
+          <h3 class="modal-milk-link">ingredient</h3>
+          <p class="products__text">Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li>
+          <h3 class="modal-milk-link">Detailed description</h3>
+          <p class="products__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            voluptatibus impedit hic numquam omnis maxime aliquam nulla sit
+            earum magnam rerum, quaerat praesentium dolore similique ipsum.
+            Aliquam aspernatur, nostrum repellat impedit officia quas explicabo
+            animi? Architecto nobis perferendis veritatis cumque enim repellat
+            iure magni omnis cupiditate quod, ipsam eos quos, deleniti
+            asperiores, ullam exercitationem placeat.
+          </p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+      </ul>
+      <button type="submit" class="button">Make an order</button>
+    </div>
+  </div>
+  <script src="./sass/js/products.js"></script>
 </section>
