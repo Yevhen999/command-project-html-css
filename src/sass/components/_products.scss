@@ -207,7 +207,7 @@
   top: 50%;
   left: 50%;
   border-radius: 24px;
-  border: solid 1px $accentColor;
+  border: solid 1px $secondaryAccentColor;
   transform: translate(-50%, -50%) scale(1);
   transition: transform $durationTransition $animationTransition;
   background-color: $heroBgColor;
@@ -246,6 +246,12 @@
     margin-right: 30px;
     top: 0;
     left: 220px;
+  }
+  .button {
+    background-color: $secondaryAccentColor;
+    color: $accentColor;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -303,7 +309,7 @@
   .products__text {
     text-align: left;
   }
-  &-link {
+  &__link {
     color: #8a6b41;
     font-weight: 700;
     font-size: 14px;
@@ -312,6 +318,7 @@
   }
   .button {
     background-color: #e8c087;
+    color: #8a6b41;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -332,7 +339,7 @@
 .backdrop-coffee {
   background-color: rgb(232, 192, 135, 0.6);
 }
-.modal-coffee {
+.modal-milk {
   display: flex;
   flex-wrap: wrap;
   width: 650px;
@@ -343,10 +350,10 @@
   top: 50%;
   left: 50%;
   border-radius: 24px;
-  border: solid 1px #e8c087;
+  border: solid 1px #597731;
   transform: translate(-50%, -50%) scale(1);
   transition: transform $durationTransition $animationTransition;
-  background-color: $elementBgColor--first;
+  background-color: $elementBgColor--second;
   @media screen and (max-width: $maxMobWidth) {
     width: 100%;
     overflow: auto;
@@ -367,15 +374,16 @@
   .products__text {
     text-align: left;
   }
-  &-link {
-    color: #8a6b41;
+  &__link {
+    color: #597731;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     letter-spacing: 0.04em;
   }
   .button {
-    background-color: #e8c087;
+    background-color: #b2e074;
+    color: #597731;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -385,14 +393,14 @@
     left: 220px;
   }
   .close-btn {
-    background-color: $elementBgColor--first;
-    border-color: #8a6b41;
+    background-color: $elementBgColor--second;
+    border: none;
     &:hover .icon-close,
     &:focus .icon-close {
-      fill: #8a6b41;
+      fill: #597731;
     }
   }
 }
-.backdrop-coffee {
-  background-color: rgb(232, 192, 135, 0.6);
+.backdrop-milk {
+  background-color: rgb(89, 119, 49, 0.7);
 }
