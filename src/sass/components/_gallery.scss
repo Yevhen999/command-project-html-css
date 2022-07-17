@@ -1,0 +1,75 @@
+.gallery__section {
+    background-image: linear-gradient(to bottom, '$secondaryBgColor', '$primaryBgColor')
+}
+
+.gallery__list {
+    display: grid;
+
+    justify-content: center;
+    grid-gap: 2px;
+    grid: repeat(12, 8.5px) / repeat(28, 8.5px);
+
+    @media screen and ($minTabletWidth) {
+        grid-gap: 4px;
+        grid: repeat(12, 18px) / repeat(28, 18px);
+    }
+
+    @media screen and ($minDeskWidth) {
+        grid-gap: 6px;
+        grid: repeat(12, 30px) / repeat(28, 30px);
+    }
+}
+
+.gallery__item {
+    display: block;
+
+    border-radius: 10%;
+    overflow: hidden;
+
+    &:nth-child(1) {
+        grid-area: 5 / 1 / span 4 / span 4;
+    }
+
+    &:nth-child(2) {
+        grid-area: 4 / 5 / span 4 / span 4;
+    }
+
+    &:nth-child(3) {
+        grid-area: 8 / 5 / span 4 / span 4;
+    }
+
+    &:nth-child(4) {
+        border-radius: 5%;
+        grid-area: 1 / 9 / span 8 / span 8;
+    }
+
+    &:nth-child(5) {
+        grid-area: 9 / 9 / span 4 / span 4;
+    }
+
+    &:nth-child(6) {
+        grid-area: 4 / 17 / span 4 / span 4;
+    }
+
+    &:nth-child(7) {
+        grid-area: 8 / 17 / span 4 / span 4;
+    }
+
+    &:nth-child(8) {
+        grid-area: 3 / 21 / span 4 / span 4;
+    }
+
+    &:nth-child(9) {
+        grid-area: 7 / 21 / span 4 / span 4;
+    }
+
+    &:nth-child(10) {
+        grid-area: 5 / 25 / span 4 / span 4;
+    }
+
+
+    &:hover {
+        box-shadow: 0px 2px 10px rgba(212, 20, 67, 0.3);
+    }
+}
+
