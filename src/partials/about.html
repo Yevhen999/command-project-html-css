@@ -10,8 +10,7 @@
             ./images/about/about-cow-1200.png    1x,
             ./images/about/about-cow-1200@2x.png 2x
           "
-          media="(min-width: 1200px)"
-          sizes="500px"
+          media="(min-width: $minDeskWidth)"
           type="image/png"
         />
         <source
@@ -19,8 +18,7 @@
             ./images/about/about-cow-768.png    1x,
             ./images/about/about-cow-768@2x.png 2x
           "
-          media="(min-width: 768px)"
-          sizes="336px"
+          media="(min-width: $minTabletWidth)"
           type="image/png"
         />
         <source
@@ -29,7 +27,6 @@
             ./images/about/about-cow-320@2x.png 2x
           "
           media="(max-width: $mobMaxWidth)"
-          sizes="280px"
           type="image/png"
         />
         <img
