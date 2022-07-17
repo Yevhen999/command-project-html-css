@@ -1,5 +1,6 @@
 .contacts {
   background-image: linear-gradient(#ffffff 21%, $secondaryBgColor 21%);
+  padding-bottom: 40px;
 }
 
 .contacts-card {
@@ -125,16 +126,13 @@
   background-color: $focusBgColor;
 }
 
-.btn-icon {
-  width: 6px;
-  height: 8px;
-  fill: currentColor;
+.contacts-button {
+  text-align: center;
 }
 
-.btn-icon2 {
-  width: 6px;
-  height: 8px;
-  fill: currentColor;
+.btn-icon {
+  stroke: currentColor;
+  margin-left: 10px;
 }
 
 .contacts-backdrop {
