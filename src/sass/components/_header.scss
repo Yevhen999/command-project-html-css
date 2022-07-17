@@ -249,6 +249,7 @@
   display: flex;
   justify-content: center;
   border: none;
+
   background-color: transparent;
   // background-color: #2196f3;
   cursor: pointer;
@@ -370,4 +371,9 @@
 /*link - убирает подчеркивание  селектара  */
 .link {
   text-decoration: none;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
