@@ -1,25 +1,71 @@
 .contacts {
   background-image: linear-gradient(#ffffff 21%, $secondaryBgColor 21%);
   padding-bottom: 40px;
+
+  @media screen and (min-width: $minDeskWidth) {
+    padding-bottom: 120px;
+  }
+}
+
+.contacts__list {
+  @media screen and (min-width: $minTabletWidth) {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $minDeskWidth) {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 60px;
+  }
 }
 
 .contacts-card {
   width: 280px;
   height: 412px;
 
-  background: #ffffff;
+  background: $primaryBgColor;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
   padding: 40px 32px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    width: 224px;
+    height: 528px;
+  }
+
+  @media screen and (min-width: $minDeskWidth) {
+    width: 368px;
+    height: 538px;
+
+    padding: 40px 40px;
+  }
 }
 
 .contacts-card:not(:last-child) {
   margin-bottom: 20px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $minDeskWidth) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-card:last-child {
   margin-bottom: 32px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $minDeskWidth) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-title-orange {
@@ -54,6 +100,13 @@
   color: $textColor;
 
   padding-top: 20px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    padding-top: 32px;
+  }
+  @media screen and (min-width: $minDeskWidth) {
+    padding-top: 32px;
+  }
 }
 
 .contacts-text {
@@ -64,6 +117,17 @@
   margin-bottom: 24px;
 
   border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: $minTabletWidth) {
+    padding-top: 12px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    padding-top: 8px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .contacts-firsttime,
@@ -73,6 +137,13 @@
 
 .contacts-firsttime {
   padding-bottom: 8px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    padding-bottom: 12px;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    padding-bottom: 12px;
+  }
 }
 
 .contacts-secondtime {
@@ -80,6 +151,15 @@
   margin-bottom: 24px;
 
   border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: $minTabletWidth) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .contacts-linktell,
@@ -98,6 +178,14 @@
 
 .contacts-btn:not(:last-child) {
   margin-bottom: 10px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    margin-bottom: 0;
+    margin-right: 14.5px;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    margin-right: 12px;
+  }
 }
 
 .contacts-btn-map {
@@ -132,6 +220,11 @@
 
 .contacts-button {
   text-align: center;
+
+  @media screen and (min-width: $minTabletWidth) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .btn-icon {
