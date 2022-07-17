@@ -6,7 +6,7 @@
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
       </a>
-      <ul class="menu menu-items list">
+      <ul class="menu menu-items list link">
         <li class="menu__item">
           <a href="" class="menu__link current"> Home </a>
         </li>
@@ -23,39 +23,50 @@
           <a href="" class="menu__link"> Contact </a>
         </li>
       </ul>
-      <button class="menu__btn_buy">
-        <a href="" class="menu__btn_buy_name link" lang="en"> Buy now </a>
-        <svg class="menu__btn_buy__icon" width="5" height="8">
-          <!-- <use href="./images/hero-header/icons.svg#icon-arrow"></use> -->
-        </svg>
-      </button>
-
-      <button
-        class="mobile-menu-bt"
-        type="button"
-        data-menu-button
-        aria-expanded="false"
-      >
-        <svg class="mobile-menu-icon" width="40" height="40">
-          <use
-            class="icon-open"
-            href="./images/sprite.svg#icon-menu"
-          ></use>
-          <use
-            class="icon-close"
-            href="./images/sprite.svg#icon-close"
-          ></use>
-        </svg>
-      </button>
-      <div class="mobile-menu" data-menu>
-        <button class="menu__btn_buy">
-          <a href="" class="menu__btn_buy_name link" lang="en"> Buy now </a>
-          <svg class="menu__btn_buy__icon" width="5" height="8">
-            <!-- <use href="./images/hero-header/icons.svg#icon-arrow"></use> -->
+      <div class="button-menu">
+        <button
+          class="mobile-menu-bt"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg class="mobile-menu-icon" width="20" height="12">
+            <use class="icon-open" href="./images/sprite.svg#icon-menu"></use>
+            
           </svg>
         </button>
 
-        <ul class="mobile-menu-nav list">
+        <button class="menu__btn_buy">
+          <a href="" class="menu__btn_buy_name link" lang="en"> Buy now </a>
+          <svg class="button__icon">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+<!----------------------------------mobile-menu------------------------------------------>
+      <div class="mobile-menu"  data-menu >
+         <button
+          class="mobile-menu-bt-close "
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg class="mobile-menu-icon" width="20" height="12">
+            <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu_button">
+        
+        <button class="mobile-menu__btn_buy">
+          <a href="" class="mobile-menu__btn_buy_name link" lang="en">
+            Buy now
+          </a>
+          <svg class="button__icon">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu-nav list link">
           <li class="mobile-menu-nav__item">
             <a href="" class="mobile-menu-nav__link current"> Home </a>
           </li>
@@ -75,4 +86,6 @@
       </div>
     </nav>
   </div>
+
+  <!-- <script src="./js/mobile-menu.js"></script> -->
 </header>

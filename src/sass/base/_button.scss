@@ -1,48 +1,48 @@
 .button {
-    padding: 12px 36px;
+  padding: 12px 36px;
 
-    border: 0;
-    border-radius: 22px;
+  border: 0;
+  border-radius: 22px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.28;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    @media screen and (min-width: $minTabletWidth) {
-        font-size: 16px;
-    }
+  @media screen and (min-width: $minTabletWidth) {
+    font-size: 16px;
+  }
 }
 .button--dark {
-    color: $primaryBgColor;
-    background-color: $accentColor;
+  color: $primaryBgColor;
+  background-color: $accentColor;
 }
 
 .button--light {
-    color: $accentColor;
-    background-color: $primaryBgColor;
+  color: $accentColor;
+  background-color: $primaryBgColor;
 
-    &:hover,
-    &:focus {
-        background-color: $focusBgColor;
-    }
+  &:hover,
+  &:focus {
+    background-color: $focusBgColor;
+  }
 }
 
 .button--centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button__icon {
-    stroke: $accentColor;
-    margin-left: 16px;
+  stroke: $accentColor;
+  margin-left: 12px;
 
-    width: 7px;
-    height: 10px;
+  width: 7px;
+  height: 10px;
 }
 
 .button__icon--light {
-    stroke: $primaryBgColor;
+  stroke: $primaryBgColor;
 }
