@@ -1,8 +1,52 @@
 <section class="hero">
   <div class="container">
     <div class="hero__title">
-      <h1 class="hero__title-text">ice cream made with passion</h1>
-      <picture>
+      <h1 class="hero__title-text">
+        ice cream<br />
+        made with<br />
+        <span class="hero__title-span">passion</span>
+      </h1>
+        
+      <button type="button" class="hero__btn--link button button--dark">Products</button>
+      
+      <button type="button" class="hero__btn--question button button--light">
+        How it’s made?
+      </button>
+      
+    </div>
+    <picture class="hero__b-e">
+        <source
+          srcset="
+            ./images/hero/big-ellipse-1200.png,
+            ./images/hero/big-ellipse-1200@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/hero/big-ellipse-768.png,
+            ./images/hero/big-ellipse-768@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/hero/big-ellipse-320.png,
+            ./images/hero/big-ellipse-320@2x.png 2x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          src="./images/hero/big-ellipse-1200.png "
+          alt="big-ellipse"
+          width="534"
+          height="534"
+        />
+      </picture>
+      <picture class="hero__ice">
         <source
           srcset="
             ./images/hero/ice-cream-1200.png,
@@ -35,11 +79,8 @@
         />
       </picture>
 
-      <div class="hero__numbers-img">
-        <ul class="hero__numbers-list">
-          <li class="hero__numbers-item">
-            <p class="hero__numbers">16</p>
-            <picture>
+      <div class="hero__numbers hero__numbers-top">
+        <picture class="hero__elipse">
               <source
                 srcset="
                   ./images/hero/ellipse-1200.png,
@@ -63,11 +104,11 @@
                 height="30"
               />
             </picture>
-           
-          </li>
-          <li class="hero__numbers-item">
-               <p class="hero__numbers">23</p>
-            <picture>
+            <p class="hero__numbers">16</p>
+            <span class="hero__span">cafes</span>
+      </div>
+        <div class="hero__numbers hero__numbers-bottom">
+          <picture class="hero__elipse">
               <source
                 srcset="
                   ./images/hero/elipse-1200.png,
@@ -92,17 +133,13 @@
                 height="30"
               />
             </picture>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="hero__btn">
-      <button type="button" class="hero__btn-link">Products</button>
-      <span class="hero__span">cafes</span>
-      <button type="button" class="hero__btn-question">How it’s made?</button>
-      <span class="hero__span">food trucks</span>
-    </div>
-    <picture>
+            <p class="hero__numbers">23</p>
+            <span class="hero__span">food trucks</span>
+            </div>
+      
+    
+  
+    <picture class="hero__milk">
       <source
         srcset="./images/hero/milk-1200.png, ./images/hero/milk-1200@2x.png 2x"
         media="(min-width: 1200px)"
@@ -121,10 +158,10 @@
       />
     </picture>
     <p class="hero__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et
+      Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,<br /> sed do eiusmod
+      tempor<br/> incididunt ut labore et
     </p>
-    <picture>
+    <picture class="hero__gerl">
       <source
         srcset="./images/hero/gerl-1200.png, ./images/hero/gerl-1200@2x.png 2x"
         media="(min-width: 1200px)"
@@ -142,5 +179,7 @@
         height="567"
       />
     </picture>
+  </div>
+  </div>
   </div>
 </section>

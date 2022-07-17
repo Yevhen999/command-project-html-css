@@ -12,12 +12,12 @@
     line-height: 1.17;
     text-align: center;
     margin-bottom: 15px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $minTabletWidth) {
       font-size: 26px;
       line-height: 1.15;
       margin-bottom: 18px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $minDeskWidth) {
       font-size: 30px;
       line-height: 1.13;
       margin-bottom: 16px;
@@ -33,11 +33,11 @@
     letter-spacing: 0.04em;
     text-align: center;
     margin-bottom: 148px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $minTabletWidth) {
       font-size: 48px;
       margin-bottom: 158px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $minDeskWidth) {
       font-size: 58px;
       letter-spacing: 0.06em;
       line-height: 1.14;
@@ -48,11 +48,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 140px;
-    @media screen and (min-width: 768px) {
-      gap: 16px;
+    @media screen and (min-width: $minTabletWidth) {
+      gap: 140px 16px;
     }
-    @media screen and (min-width: 1200px) {
-      gap: 28px;
+    @media screen and (min-width: $minDeskWidth) {
+      gap: 280px 28px;
     }
   }
   &__item {
@@ -64,11 +64,11 @@
     padding: 160px 40px 40px 40px;
     gap: 32px;
     position: relative;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $minTabletWidth) {
       max-width: 224px;
       padding: 118px 32px 40px 32px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $minDeskWidth) {
       max-width: 368px;
       padding: 165px 64px 60px 64px;
     }
@@ -77,16 +77,16 @@
     position: absolute;
     top: -140px;
     transition-property: transform;
-    transition-duration: 3000ms;
+    transition-duration: 1500ms;
     transition-timing-function: $animationTransition;
     &:hover,
     &:focus {
-      transform: rotateY(360deg);
+      transform: rotateY(180deg);
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $minTabletWidth) {
       top: -138px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $minDeskWidth) {
       top: -261px;
     }
   }
@@ -98,7 +98,7 @@
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04em;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $minDeskWidth) {
       font-size: 30px;
       line-height: 1.13;
     }
@@ -122,10 +122,10 @@
     line-height: 1.52;
     letter-spacing: 0.04em;
     text-align: center;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $minTabletWidth) {
       line-height: 1.76;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $minDeskWidth) {
       font-size: 16px;
     }
   }
@@ -133,6 +133,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    border: none;
     border-color: inherit;
     display: flex;
     align-items: center;
@@ -147,11 +148,11 @@
 }
 .btn-cofee:hover,
 .btn-cofee:focus {
-  background-color: $elementBgColor--first;
+  background-color: #e8c087;
 }
 .btn-milk:hover,
 .btn-milk:focus {
-  background-color: $elementBgColor--second;
+  background-color: #b2e074;
 }
 .item-cream {
   background-color: $heroBgColor;
@@ -161,4 +162,109 @@
 }
 .item-milk {
   background-color: $elementBgColor--second;
+}
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(255, 184, 201, 0.6);
+  top: 0;
+  left: 0;
+  transition: opacity $durationTransition $animationTransition,
+    visibility $durationTransition $animationTransition;
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.close-btn {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  fill: #000000;
+  background-color: $heroBgColor;
+  border-color: $accentColor;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  transition: fill $durationTransition $animationTransition;
+  &:hover .icon-close,
+  &:focus .icon-close {
+    fill: $accentColor;
+  }
+}
+
+.modal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 650px;
+  height: 620px;
+  padding: 40px;
+  margin-left: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 24px;
+  border: solid 1px $accentColor;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $durationTransition $animationTransition;
+  background-color: $heroBgColor;
+  @media screen and (max-width: $maxMobWidth) {
+    width: 100%;
+    overflow: auto;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    width: 100%;
+    max-width: 528px;
+  }
+  @media screen and(min-width: $minDeskWidth) {
+    min-width: 564px;
+    min-height: 680px;
+  }
+  &__title {
+    font-size: 28px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+  }
+  .products__text {
+    text-align: left;
+  }
+  &-link {
+    color: $accentColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    letter-spacing: 0.04em;
+  }
+  .button {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .products__img {
+    margin-right: 30px;
+    top: 0;
+    left: 220px;
+  }
+}
+
+.icon-close {
+  width: 18px;
+  height: 18px;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    cursor: pointer;
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.no-scroll {
+  overflow: hidden;
 }
