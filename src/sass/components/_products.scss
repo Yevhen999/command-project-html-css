@@ -163,6 +163,7 @@
 .item-milk {
   background-color: $elementBgColor--second;
 }
+<<<<<<< Updated upstream
 .backdrop {
   width: 100%;
   height: 100%;
@@ -268,3 +269,83 @@
 .no-scroll {
   overflow: hidden;
 }
+=======
+// .backdrop {
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   position: fixed;
+//   top: 0;
+//   transition: opacity var(--transition), visibility var(--transition);
+//   &.is-hidden .modal {
+//     transform: translate(-50%, -50%) scale(0);
+//   }
+// }
+
+// .close-btn {
+//   display: flex;
+//   align-items: center;
+//   width: 30px;
+//   height: 30px;
+//   fill: #000000;
+//   background-color: transparent;
+//   border-color: rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   cursor: pointer;
+//   transition: fill var(--transition);
+//   &:hover .icon-close,
+//   &:focus .icon-close {
+//     fill: var(--accent-color);
+//   }
+// }
+
+// .modal {
+//   width: 450px;
+//   height: 609px;
+//   padding: 40px;
+//   margin: 0 auto;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%) scale(1);
+//   transition: transform var(--transition);
+//   background-color: rgba(255, 255, 255, 1);
+//   border-radius: 4px;
+//   @media screen and (max-height: 609px) {
+//     height: 100%;
+//     overflow: auto;
+//   }
+//   @media screen and (max-width: 479px) {
+//     width: 100vw;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 528px;
+//     min-height: 581px;
+//   }
+//   &__title {
+//     font-size: 20px;
+//     line-height: 1.15;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 12px;
+//   }
+// }
+// .icon-close {
+//   width: 18px;
+//   height: 18px;
+//   &:hover,
+//   &:focus {
+//     fill: var(--accent-color);
+//     cursor: pointer;
+//   }
+// }
+
+// .is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
+>>>>>>> Stashed changes
