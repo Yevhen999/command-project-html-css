@@ -85,9 +85,12 @@
     }
 }
 .about__img {
-    margin-bottom: 40px;
+    @media screen and (max-width: $maxMobWidth) {
+        margin-bottom: 40px;
+    
+        max-width: 280px;
+    }
 
-    max-width: 280px;
 
     @media screen and (min-width: $minTabletWidth) {
         margin-right: 32px;
