@@ -1,6 +1,16 @@
 .header {
-  background-color: $heroBgColor;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: transparent;
   padding-top: 8px;
+
+  @media screen and (min-width: 320px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 32px;
