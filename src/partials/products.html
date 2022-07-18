@@ -3,7 +3,7 @@
     <p class="products__lable">100% natural</p>
     <h2 class="products__title">products</h2>
     <ul class="products__list list">
-      <li class="products__item item-cream">
+      <li class="scene products__item item-cream">
         <picture class="products__img">
           <source
             srcset="
@@ -11,7 +11,6 @@
               ./images/products/products1-1200@2x.png 2x
             "
             media="(min-width: 1200px)"
-            sizes="368px"
             type="image/png"
           />
           <source
@@ -20,7 +19,6 @@
               ./images/products/products1-768@2x.png 2x
             "
             media="(min-width: 768px)"
-            sizes="224px"
             type="image/png"
           />
           <source
@@ -29,7 +27,6 @@
               ./images/products/products1-320@2x.png 2x
             "
             media="(max-width: 767px)"
-            sizes="280px"
             type="image/png"
           />
           <img src="./images/products/products1-320.png " alt="ice cream" />
@@ -46,12 +43,12 @@
           eiusmod tempor incididunt ut labore et
         </p>
         <button type="button" class="products__btn btn-cream" data-modal-open>
-          <svg class="products__icon" widht="12" height="12">
+          <svg class="products__icon" height="12">
             <use href="./images/prod.svg#icon-arrow"></use>
           </svg>
         </button>
       </li>
-      <li class="products__item item-coffee">
+      <li class="scene products__item item-coffee">
         <picture class="products__img">
           <source
             srcset="
@@ -59,7 +56,6 @@
               ./images/products/products2-1200@2x.png 2x
             "
             media="(min-width: 1200px)"
-            sizes="368px"
             type="image/png"
           />
           <source
@@ -68,7 +64,6 @@
               ./images/products/products2-768@2x.png 2x
             "
             media="(min-width: 768px)"
-            sizes="224px"
             type="image/png"
           />
           <source
@@ -77,7 +72,6 @@
               ./images/products/products2-320@2x.png 2x
             "
             media="(max-width: 767px)"
-            sizes="280px"
             type="image/png"
           />
           <img src="./images/products/products2-320.png " alt="ice coffee" />
@@ -93,13 +87,17 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button type="button" class="products__btn btn-cofee" data-modal-open>
-          <svg class="products__icon" widht="12" height="12">
+        <button
+          type="button"
+          class="products__btn btn-cofee"
+          data-modal-coffee-open
+        >
+          <svg class="products__icon" height="12">
             <use href="./images/prod.svg#icon-arrow"></use>
           </svg>
         </button>
       </li>
-      <li class="products__item item-milk">
+      <li class="scene products__item item-milk">
         <picture class="products__img">
           <source
             srcset="
@@ -107,7 +105,6 @@
               ./images/products/products3-1200@2x.png 2x
             "
             media="(min-width: 1200px)"
-            sizes="368px"
             type="image/png"
           />
           <source
@@ -116,7 +113,6 @@
               ./images/products/products3-768@2x.png 2x
             "
             media="(min-width: 768px)"
-            sizes="224px"
             type="image/png"
           />
           <source
@@ -125,7 +121,6 @@
               ./images/products/products3-320@2x.png 2x
             "
             media="(max-width: 767px)"
-            sizes="280px"
             type="image/png"
           />
           <img src="./images/products/products3-320.png " alt="milkshakes" />
@@ -140,8 +135,12 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button type="button" class="products__btn btn-milk" data-modal-open>
-          <svg class="products__icon" widht="12" height="12">
+        <button
+          type="button"
+          class="products__btn btn-milk"
+          data-modal-milk-open
+        >
+          <svg class="products__icon" height="12">
             <use href="./images/prod.svg#icon-arrow"></use>
           </svg>
         </button>
@@ -163,7 +162,6 @@
             ./images/products/products1-1200@2x.png 2x
           "
           media="(min-width: 1200px)"
-          sizes="368px"
           type="image/png"
         />
         <source
@@ -172,7 +170,6 @@
             ./images/products/products1-768@2x.png 2x
           "
           media="(min-width: 768px)"
-          sizes="224px"
           type="image/png"
         />
         <source
@@ -181,7 +178,6 @@
             ./images/products/products1-320@2x.png 2x
           "
           media="(max-width: 767px)"
-          sizes="280px"
           type="image/png"
         />
         <img src="./images/products/products1-320.png " alt="ice cream" />
@@ -214,55 +210,52 @@
       <button type="submit" class="button">Make an order</button>
     </div>
   </div>
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal-cofee">
-      <button type="button" class="close-btn" data-modal-close>
+  <div class="backdrop backdrop-coffee is-hidden" data-modal-coffee>
+    <div class="modal-coffee">
+      <button type="button" class="close-btn" data-modal-coffee-close>
         <svg class="icon-close">
           <use href="./images/prod.svg#icon-close_40px"></use>
         </svg>
       </button>
-      <h2 class="modal-cofee__title products__name">ice cream</h2>
+      <h2 class="modal-coffee__title products__name">ice cream</h2>
       <picture class="products__img">
         <source
           srcset="
-            ./images/products/products1-1200.png    1x,
-            ./images/products/products1-1200@2x.png 2x
+            ./images/products/products2-1200.png    1x,
+            ./images/products/products2-1200@2x.png 2x
           "
           media="(min-width: 1200px)"
-          sizes="368px"
           type="image/png"
         />
         <source
           srcset="
-            ./images/products/products1-768.png    1x,
-            ./images/products/products1-768@2x.png 2x
+            ./images/products/products2-768.png    1x,
+            ./images/products/products2-768@2x.png 2x
           "
           media="(min-width: 768px)"
-          sizes="224px"
           type="image/png"
         />
         <source
           srcset="
-            ./images/products/products1-320.png    1x,
-            ./images/products/products1-320@2x.png 2x
+            ./images/products/products2-320.png    1x,
+            ./images/products/products2-320@2x.png 2x
           "
           media="(max-width: 767px)"
-          sizes="280px"
           type="image/png"
         />
-        <img src="./images/products/products1-320.png " alt="ice cream" />
+        <img src="./images/products/products2-320.png " alt="ice coffee" />
       </picture>
       <ul class="list">
         <li>
-          <h3 class="modal-cofee-link">Price</h3>
+          <h3 class="modal-coffee__link">Price</h3>
           <p class="products__text">8$</p>
         </li>
         <li>
-          <h3 class="modal-cofee-link">ingredient</h3>
+          <h3 class="modal-coffee__link">ingredient</h3>
           <p class="products__text">Lorem ipsum dolor sit amet.</p>
         </li>
         <li>
-          <h3 class="modal-link">Detailed description</h3>
+          <h3 class="modal-coffee__link">Detailed description</h3>
           <p class="products__text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
             voluptatibus impedit hic numquam omnis maxime aliquam nulla sit
@@ -280,9 +273,9 @@
       <button type="submit" class="button">Make an order</button>
     </div>
   </div>
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="close-btn" data-modal-close>
+  <div class="backdrop backdrop-milk is-hidden" data-modal-milk>
+    <div class="modal-milk">
+      <button type="button" class="close-btn" data-modal-milk-close>
         <svg class="icon-close">
           <use href="./images/prod.svg#icon-close_40px"></use>
         </svg>
@@ -291,44 +284,41 @@
       <picture class="products__img">
         <source
           srcset="
-            ./images/products/products1-1200.png    1x,
-            ./images/products/products1-1200@2x.png 2x
+            ./images/products/products3-1200.png    1x,
+            ./images/products/products3-1200@2x.png 2x
           "
           media="(min-width: 1200px)"
-          sizes="368px"
           type="image/png"
         />
         <source
           srcset="
-            ./images/products/products1-768.png    1x,
-            ./images/products/products1-768@2x.png 2x
+            ./images/products/products3-768.png    1x,
+            ./images/products/products3-768@2x.png 2x
           "
           media="(min-width: 768px)"
-          sizes="224px"
           type="image/png"
         />
         <source
           srcset="
-            ./images/products/products1-320.png    1x,
-            ./images/products/products1-320@2x.png 2x
+            ./images/products/products3-320.png    1x,
+            ./images/products/products3-320@2x.png 2x
           "
           media="(max-width: 767px)"
-          sizes="280px"
           type="image/png"
         />
-        <img src="./images/products/products1-320.png " alt="ice cream" />
+        <img src="./images/products/products3-320.png " alt="milkshakes" />
       </picture>
       <ul class="list">
         <li>
-          <h3 class="modal-milk-link">Price</h3>
+          <h3 class="modal-milk__link">Price</h3>
           <p class="products__text">8$</p>
         </li>
         <li>
-          <h3 class="modal-milk-link">ingredient</h3>
+          <h3 class="modal-milk__link">ingredient</h3>
           <p class="products__text">Lorem ipsum dolor sit amet.</p>
         </li>
         <li>
-          <h3 class="modal-milk-link">Detailed description</h3>
+          <h3 class="modal-milk__link">Detailed description</h3>
           <p class="products__text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
             voluptatibus impedit hic numquam omnis maxime aliquam nulla sit
@@ -347,4 +337,6 @@
     </div>
   </div>
   <script src="./sass/js/products.js"></script>
+  <script src="./sass/js/coffee.js"></script>
+  <script src="./sass/js/milk.js"></script>
 </section>

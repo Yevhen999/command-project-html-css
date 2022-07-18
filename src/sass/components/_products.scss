@@ -183,9 +183,8 @@
   width: 30px;
   height: 30px;
   fill: #000000;
+  border: none;
   background-color: $heroBgColor;
-  border-color: $accentColor;
-  border-radius: 50%;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -208,7 +207,7 @@
   top: 50%;
   left: 50%;
   border-radius: 24px;
-  border: solid 1px $accentColor;
+  border: solid 1px $secondaryAccentColor;
   transform: translate(-50%, -50%) scale(1);
   transition: transform $durationTransition $animationTransition;
   background-color: $heroBgColor;
@@ -248,11 +247,18 @@
     top: 0;
     left: 220px;
   }
+  .button {
+    background-color: $secondaryAccentColor;
+    color: $accentColor;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .icon-close {
   width: 18px;
   height: 18px;
+  border: none;
   &:hover,
   &:focus {
     fill: $accentColor;
@@ -267,4 +273,134 @@
 }
 .no-scroll {
   overflow: hidden;
+}
+.modal-coffee {
+  display: flex;
+  flex-wrap: wrap;
+  width: 650px;
+  height: 620px;
+  padding: 40px;
+  margin-left: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 24px;
+  border: solid 1px #e8c087;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $durationTransition $animationTransition;
+  background-color: $elementBgColor--first;
+  @media screen and (max-width: $maxMobWidth) {
+    width: 100%;
+    overflow: auto;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    width: 100%;
+    max-width: 528px;
+  }
+  @media screen and(min-width: $minDeskWidth) {
+    min-width: 564px;
+    min-height: 680px;
+  }
+  &__title {
+    font-size: 28px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+  }
+  .products__text {
+    text-align: left;
+  }
+  &__link {
+    color: #8a6b41;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    letter-spacing: 0.04em;
+  }
+  .button {
+    background-color: #e8c087;
+    color: #8a6b41;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .products__img {
+    margin-right: 30px;
+    top: 0;
+    left: 220px;
+  }
+  .close-btn {
+    background-color: $elementBgColor--first;
+    border-color: #8a6b41;
+    &:hover .icon-close,
+    &:focus .icon-close {
+      fill: #8a6b41;
+    }
+  }
+}
+.backdrop-coffee {
+  background-color: rgb(232, 192, 135, 0.6);
+}
+.modal-milk {
+  display: flex;
+  flex-wrap: wrap;
+  width: 650px;
+  height: 620px;
+  padding: 40px;
+  margin-left: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 24px;
+  border: solid 1px #597731;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $durationTransition $animationTransition;
+  background-color: $elementBgColor--second;
+  @media screen and (max-width: $maxMobWidth) {
+    width: 100%;
+    overflow: auto;
+  }
+  @media screen and (min-width: $minTabletWidth) {
+    width: 100%;
+    max-width: 528px;
+  }
+  @media screen and(min-width: $minDeskWidth) {
+    min-width: 564px;
+    min-height: 680px;
+  }
+  &__title {
+    font-size: 28px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+  }
+  .products__text {
+    text-align: left;
+  }
+  &__link {
+    color: #597731;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    letter-spacing: 0.04em;
+  }
+  .button {
+    background-color: #b2e074;
+    color: #597731;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .products__img {
+    margin-right: 30px;
+    top: 0;
+    left: 220px;
+  }
+  .close-btn {
+    background-color: $elementBgColor--second;
+    border: none;
+    &:hover .icon-close,
+    &:focus .icon-close {
+      fill: #597731;
+    }
+  }
+}
+.backdrop-milk {
+  background-color: rgb(89, 119, 49, 0.7);
 }
