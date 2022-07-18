@@ -1,5 +1,5 @@
 .gallery__section {
-    background-image: linear-gradient(to bottom, '$secondaryBgColor', '$primaryBgColor')
+    background-image: linear-gradient(to bottom, $secondaryBgColor, $primaryBgColor)
 }
 
 .gallery__list {
@@ -9,12 +9,12 @@
     grid-gap: 2px;
     grid: repeat(12, 8.5px) / repeat(28, 8.5px);
 
-    @media screen and ($minTabletWidth) {
+    @media screen and (min-width: 768px) {
         grid-gap: 4px;
         grid: repeat(12, 18px) / repeat(28, 18px);
     }
 
-    @media screen and ($minDeskWidth) {
+    @media screen and (min-width: 1200px) {
         grid-gap: 6px;
         grid: repeat(12, 30px) / repeat(28, 30px);
     }
@@ -68,7 +68,9 @@
     }
 
 
-    &:hover {
+    &:hover,
+    &:focus {
+        transform: scale(1.5);
         box-shadow: 0px 2px 10px rgba(212, 20, 67, 0.3);
     }
 }
