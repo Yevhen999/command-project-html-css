@@ -98,6 +98,7 @@
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04em;
+    text-transform: uppercase;
     @media screen and (min-width: $minDeskWidth) {
       font-size: 30px;
       line-height: 1.13;
@@ -139,6 +140,7 @@
     align-items: center;
     fill: $accentColor;
     background-color: $primaryBgColor;
+    transition: transform $durationTransition $animationTransition;
     &:hover,
     &:focus {
       background-color: $secondaryAccentColor;
@@ -259,6 +261,7 @@
   width: 18px;
   height: 18px;
   border: none;
+  transition: transform $durationTransition $animationTransition;
   &:hover,
   &:focus {
     fill: $accentColor;
@@ -330,6 +333,7 @@
   .close-btn {
     background-color: $elementBgColor--first;
     border-color: #8a6b41;
+    transition: transform $durationTransition $animationTransition;
     &:hover .icon-close,
     &:focus .icon-close {
       fill: #8a6b41;
@@ -395,6 +399,7 @@
   .close-btn {
     background-color: $elementBgColor--second;
     border: none;
+    transition: transform $durationTransition $animationTransition;
     &:hover .icon-close,
     &:focus .icon-close {
       fill: #597731;
