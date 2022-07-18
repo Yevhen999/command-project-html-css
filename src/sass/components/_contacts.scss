@@ -5,27 +5,17 @@
   @media screen and (min-width: $minDeskWidth) {
     padding-bottom: 120px;
   }
+
+  &__list {
+    @media screen and (min-width: $minTabletWidth) {
+      display: flex;
+      margin: -16px;
+  }
 }
-
-.contacts__list {
-  @media screen and (min-width: $minTabletWidth) {
-    display: flex;
-    justify-content: space-around;
-
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: $minDeskWidth) {
-    display: flex;
-    justify-content: space-around;
-
-    margin-bottom: 60px;
-  }
 }
 
 .contacts-card {
-  width: 280px;
-  height: 412px;
+  line-height: 1.86;
 
   background: $primaryBgColor;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -33,101 +23,91 @@
 
   padding: 40px 32px;
 
+
+  @media screen and (max-width: $maxMobWidth){
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+
   @media screen and (min-width: $minTabletWidth) {
-    width: 224px;
-    height: 528px;
+    margin: 16px;
+    flex-basis: calc((100% - 32px * 2) / 2);
+    font-size: 14px;
   }
 
   @media screen and (min-width: $minDeskWidth) {
-    width: 368px;
-    height: 538px;
-
     padding: 40px 40px;
+    font-size: 16px;
   }
 }
 
-.contacts-card:not(:last-child) {
+.contacts-title {
+  color: $primaryBgColor;
   margin-bottom: 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 0px 24px;
+  display: inline-block;
 
-  @media screen and (min-width: $minTabletWidth) {
-    margin-bottom: 0;
-  }
-  @media screen and (min-width: $minDeskWidth) {
-    margin-bottom: 0;
-  }
-}
-
-.contacts-card:last-child {
-  margin-bottom: 32px;
-
-  @media screen and (min-width: $minTabletWidth) {
-    margin-bottom: 0;
-  }
-  @media screen and (min-width: $minDeskWidth) {
-    margin-bottom: 0;
-  }
-}
-
-.contacts-title-orange {
-  color: $primaryBgColor;
-
-  display: flex;
-  align-items: center;
   text-align: center;
-  justify-content: center;
 
-  width: 80px;
-  height: 16px;
+  &.title--orange {
   background-color: $elementBgColor--first;
-  border-radius: 4px;
 }
 
-.contacts-title-green {
-  color: $primaryBgColor;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-
-  width: 130px;
-  height: 16px;
+  &.title--green {
   background-color: $elementBgColor--second;
-  border-radius: 4px;
+}
+
+@media screen and (min-width: $minTabletWidth) {
+  margin-bottom: 32px;
+  font-size: 16px;
+  padding: 0px 16px;
+  border-radius: 6px;
+}
 }
 
 .contacts-place {
-  color: $textColor;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
 
-  padding-top: 20px;
-
-  @media screen and (min-width: $minTabletWidth) {
-    padding-top: 32px;
-  }
-  @media screen and (min-width: $minDeskWidth) {
-    padding-top: 32px;
-  }
+  margin-bottom: 8px;
 }
 
 .contacts-text {
   color: $secondaryTextColor;
+  line-height: 1.5;
 
-  padding-top: 8px;
   padding-bottom: 24px;
   margin-bottom: 24px;
 
   border-bottom: 1px solid #e1e1e1;
 
   @media screen and (min-width: $minTabletWidth) {
-    padding-top: 12px;
     padding-bottom: 32px;
     margin-bottom: 32px;
   }
+}
+
+.work-time{
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  
+  border-bottom: 1px solid #e1e1e1;
+  
   @media screen and (min-width: $minTabletWidth) {
-    padding-top: 8px;
     padding-bottom: 32px;
     margin-bottom: 32px;
   }
+}
+
+.work-time__item:first-child {
+    margin-bottom: 8px;
+
+  @media screen and (min-width: $minTabletWidth) {
+    margin-bottom: 12px;
+    }
 }
 
 .contacts-firsttime,
@@ -135,102 +115,95 @@
   color: $secondaryAccentColor;
 }
 
-.contacts-firsttime {
-  padding-bottom: 8px;
-
-  @media screen and (min-width: $minTabletWidth) {
-    padding-bottom: 12px;
-  }
-  @media screen and (min-width: $minTabletWidth) {
-    padding-bottom: 12px;
-  }
-}
-
-.contacts-secondtime {
-  padding-bottom: 24px;
-  margin-bottom: 24px;
-
-  border-bottom: 1px solid #e1e1e1;
-
-  @media screen and (min-width: $minTabletWidth) {
-    padding-bottom: 32px;
-    margin-bottom: 32px;
-  }
-  @media screen and (min-width: $minTabletWidth) {
-    padding-bottom: 32px;
-    margin-bottom: 32px;
-  }
-}
-
-.contacts-linktell,
-.contacts-linkmail {
+.contacts-link {
+  line-height: 1.5;
   color: $secondaryTextColor;
-  text-decoration: none;
-}
 
-.contacts-linktell:hover {
+  @media screen and (min-width: $minTabletWidth){
+      line-height: 1.83;
+    }
+  
+  &:hover,
+  &:focus {
   color: $accentColor;
 }
 
-.contacts-linkmail:hover {
-  color: $accentColor;
+transition: color 250ms $animationTransition;
 }
 
-.contacts-btn:not(:last-child) {
-  margin-bottom: 10px;
-
-  @media screen and (min-width: $minTabletWidth) {
-    margin-bottom: 0;
-    margin-right: 14.5px;
-  }
-  @media screen and (min-width: $minTabletWidth) {
-    margin-right: 12px;
-  }
-}
-
-.contacts-btn-map {
-  width: 162px;
-  height: 44px;
-  font-weight: 700;
-  color: $primaryBgColor;
-
-  background: #d41342;
-  border: none;
-  border-radius: 22px;
-}
-
-.contacts-btn-map:hover {
-  background-color: $secondaryAccentColor;
-}
-
-.contacts-btn-fran {
-  width: 162px;
-  height: 44px;
-  font-weight: 700;
-  color: $accentColor;
-
-  background: $primaryBgColor;
-  border: none;
-  border-radius: 22px;
-}
-
-.contacts-btn-fran:hover {
-  background-color: $focusBgColor;
-}
+// Кнопки
 
 .contacts-button {
   text-align: center;
+  margin-top: 32px;
 
   @media screen and (min-width: $minTabletWidth) {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
   }
+}
+
+.btn-list{
+  &:not(:last-child) {
+      @media screen and (max-width: $maxMobWidth) {
+        margin-bottom: 10px;
+      }
+    }
+  
+    &:not(:last-child) {
+      @media screen and (min-width: $minTabletWidth) {
+        margin-right: 15px;
+      }
+    }
+}
+
+.btn-contacts {
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  font-weight: 700;
+  line-height: 1.31;
+  font-size: 16px;
+  
+  border: none;
+  cursor: pointer;
+}
+
+.btn--red {
+  color: $primaryBgColor;
+  background-color: $accentColor;
+
+  &:hover,
+  &:focus {
+    background-color: $focusBgColor;
+    color: $accentColor;
+  }
+
+    transition: color 250ms $animationTransition,
+        background-color 250ms $animationTransition;
+}
+
+.btn--white {
+  color: $accentColor;
+  background-color: $primaryBgColor;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    color: $primaryBgColor;
+  }
+
+  transition: color 250ms $animationTransition,
+    background-color 250ms $animationTransition;
 }
 
 .btn-icon {
   stroke: currentColor;
   margin-left: 10px;
 }
+
+// Модалка
 
 .contacts-backdrop {
   position: fixed;
