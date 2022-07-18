@@ -65,7 +65,7 @@
     gap: 32px;
     position: relative;
     @media screen and (min-width: $minTabletWidth) {
-      width: calc((100% - 32px) / 3);
+      max-width: 224px;
       padding: 118px 32px 40px 32px;
     }
     @media screen and (min-width: $minDeskWidth) {
