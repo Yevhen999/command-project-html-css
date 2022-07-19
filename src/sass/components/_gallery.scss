@@ -1,5 +1,6 @@
 .gallery__section {
-    background-image: linear-gradient(to bottom, $secondaryBgColor, $primaryBgColor)
+    background-image: linear-gradient
+    (to bottom, $secondaryBgColor 20%, $primaryBgColor 80%);
 }
 
 .gallery__list {
