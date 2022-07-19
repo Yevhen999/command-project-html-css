@@ -7,21 +7,19 @@
   background-color: transparent;
   padding-top: 8px;
 
-  @media screen and (min-width: 320px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  // @media screen and (min-width: 320px) {
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  // }
 
-  @media screen and (min-width: 768px) {
-    padding: 32px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   padding: 32px;
+  // }
   @media screen and (min-width: 1200px) {
     padding: 37px 16px 32px 16px;
   }
 }
 .header-container {
-  width: 100%;
-  padding: 0;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -55,6 +53,7 @@
   color: $primaryBgColor;
   display: flex;
   align-items: center;
+  margin-left: auto;
   @media screen and (min-width: 320px) and (max-width: 1199px) {
     display: none;
   }
@@ -72,6 +71,7 @@
 .button-menu {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .menu__btn_buy {
   display: flex;
@@ -359,10 +359,9 @@
 
   top: 0;
   right: 0;
-  // left: 0;
-  // transform: translateX(-50%);
+
   background-color: #e17992;
-  width: 100%;
+  // width: 100%;
   height: 100%;
   padding: 20px 20px;
   right: 0%;
@@ -370,14 +369,16 @@
   // transform: translateX(100%);
   transition: transform 400ms ease-in;
   z-index: 5;
-  @media screen and (min-width: 321px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 1199px) {
     width: 254px;
     padding: 20px 32px;
-
-    // transform: translateX(100%);
-    // transition: transform 400ms ease-in;
-
-    // transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 
   &.is-hidden .modal {
