@@ -23,8 +23,12 @@
 .gallery__item {
     display: block;
 
-    border-radius: 10%;
+    border-radius: 8px;
     overflow: hidden;
+
+    @media screen  and (min-width: 768px) {
+        border-radius: 20px;
+    }
 
     &:nth-child(1) {
         grid-area: 5 / 1 / span 4 / span 4;
