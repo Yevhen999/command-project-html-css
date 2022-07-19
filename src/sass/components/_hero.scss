@@ -29,6 +29,7 @@
     text-transform: uppercase;
     color: $primaryBgColor;
     margin-bottom: 20px;
+    
 
     @media screen and (min-width: 768px) {
         font-size: 22px;
@@ -39,6 +40,7 @@
     @media screen and (min-width: 1200px) {
         font-size: 38px;
         line-height: 1.15;
+       
     }
 }
 
@@ -142,11 +144,7 @@ transition-timing-function: $animationTransition;
 }
 
 .hero__btn {
-    padding-left: 20px;
-    padding-top: 320px;
-    position: absolute;
     display: flex;
-    margin-right: 8px;
 }
 
 .hero__btn--link {
@@ -313,7 +311,7 @@ margin-right: 12px;
 .hero__numbers-bottom {
     @media screen and (min-width: 768px) {
         position: relative;
-        width: 51px;
+        width: 53px;
         height: 43px;
         z-index: 0;
     }
@@ -363,16 +361,15 @@ color: $accentColor;
     @media screen and (min-width: 768px) {
         display: block;
         text-align: right;
-        font-weight: 400;
         font-size: 8px;
         line-height: 1.25;
         color: $primaryBgColor;
-        
+        padding-right: 10px;
     }
 
     @media screen and (min-width: 1200px) {
         font-size: 12px;
         line-height: 1.28;
-        
+        padding-right: 18px;
     }
 }
