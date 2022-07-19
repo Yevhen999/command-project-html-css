@@ -22,7 +22,8 @@
 .button--light {
   color: $accentColor;
   background-color: $primaryBgColor;
-
+  @include transitioned(background-color);
+  
   &:hover,
   &:focus {
     background-color: $focusBgColor;
