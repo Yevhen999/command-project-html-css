@@ -92,6 +92,13 @@
         width: 368px;
         height: 394px;
       }
+      transition-property: transform;
+      transition-duration: 1500ms;
+      transition-timing-function: $animationTransition;
+    }
+    &:hover::before,
+    &:focus::before {
+      transform: rotateY(180deg);
     }
   }
 
