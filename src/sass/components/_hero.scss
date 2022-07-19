@@ -2,7 +2,7 @@
     background-color: $heroBgColor;
 }
 .hero .container{
-    
+    overflow: hidden;
     position: relative;
     max-width: 767px;
     height: 502px;
@@ -15,6 +15,7 @@
 
     @media screen and (min-width: 1200px) {
         height: 664px;
+        width: 1200px;
     }
 }
 
@@ -84,22 +85,44 @@ transition-timing-function: $animationTransition;
 .hero__ice:hover {
     transform: rotateY(180deg);
 }
-.hero__b-e {
+// .hero__b-e {
+//     position: absolute;
+//     top: 83px;
+//     left: 16px;
+//     width: 284px;
+//     @media screen and (min-width: 768px) {
+//         top: 43px;
+//         left: 216px;
+//         width: 335px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+// top: 54px;
+// left: 517px;
+// width: 534px;
+//     }
+// }
+.big-ellipse{
     position: absolute;
     top: 83px;
-    left: 16px;
-    width: 284px;
-    @media screen and (min-width: 768px) {
-        top: 43px;
-        left: 216px;
-        width: 335px;
-    }
-
-    @media screen and (min-width: 1200px) {
-top: 54px;
-left: 517px;
-width: 534px;
-    }
+    left: 36px;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: #FFA5BA;
+     @media screen and (min-width: 768px) {
+                top: 43px;
+                left: 216px;
+                width: 335px;
+                height: 333px;
+            }
+    
+            @media screen and (min-width: 1200px) {
+        top: 54px;
+        left: 517px;
+        width: 534px;
+        height: 534px;
+            }
 }
 
 .hero__title {
@@ -132,12 +155,18 @@ width: 534px;
     margin-right: 8px;
     font-size: 8px;
     line-height: 1.25;
+@media screen and (min-width: 768px) {
+padding-left: 14px;
+padding-right: 14px;
+font-size: 8px;
+line-height: 1.25;
+}
     @media screen and (min-width: 1200px) {
         padding-left: 23px;
         padding-right: 23px;
 font-size: 14px;
 line-height: 1.28;
-margin-right: 8px;
+margin-right: 12px;
     }
 }
 .hero__btn--question{
@@ -145,6 +174,10 @@ margin-right: 8px;
     padding-right: 12px;
     font-size: 8px;
     line-height: 1.25;
+    @media screen and (min-width: 768px) {
+    padding-left: 14px;
+    padding-right: 14px;
+    }
     @media screen and (min-width: 1200px) {
         padding-left: 21px;
         padding-right: 21px;
@@ -179,7 +212,7 @@ margin-right: 8px;
         position: absolute;
         display: block;
         top: 265px;
-        left: 514px;
+        left: 546px;
       width: 190px;
     }
 
@@ -187,7 +220,7 @@ margin-right: 8px;
         width: 304px;
         height: 241px;
         top: 423px;
-        left: 920px;
+        left: 880px;
     }
 }
 
@@ -238,17 +271,13 @@ margin-right: 8px;
         display: flex;
         flex-direction: column;
         top: 92px;
-        right: 0px;
+        right: 32px;
 
         position: absolute;
         font-weight: 400;
         font-size: 28px;
         line-height: 1.14;
-        
-        letter-spacing: 0.04em;
-        
-        color: $accentColor;
-
+        text-align: right;
     }
 
     @media screen and (min-width: 1200px) {
@@ -272,11 +301,13 @@ margin-right: 8px;
     margin-left: auto;
     width: 43px;
     height: 44px;
+    z-index: 0;
 }
 
 @media screen and (min-width: 1200px) {
     width: 72px;
     height: 77px;
+    
 }
 }
 .hero__numbers-bottom {
@@ -284,17 +315,20 @@ margin-right: 8px;
         position: relative;
         width: 51px;
         height: 43px;
+        z-index: 0;
     }
 
     @media screen and (min-width: 1200px) {
         width: 92px;
         height: 76px;
+        
     }
 }
 .hero__elipse{
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
 @media screen and (min-width: 768px) {
     width: 18px;
 }
@@ -304,41 +338,39 @@ margin-right: 8px;
 }
 .hero__number{
     @media screen and (min-width: 768px) {
-        position: absolute;
+   z-index: 0;
+   padding-top: 2px;
+   padding-right: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     font-size: 28px;
     line-height: 1.14;
-    top: 2px;
-    right: 10px;
+color: $accentColor;
     }
     
     @media screen and (min-width: 1200px) {
-        position: absolute;
-        top: 4px;
-        right: 18px;
+    padding-top: 4px;
+    padding-right: 18px;
         font-size: 46px;
         line-height: 1.15;
-        margin-bottom: 2;
     }
     
 }
+
 .hero__span {
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        position: absolute;
+        display: block;
+        text-align: right;
         font-weight: 400;
         font-size: 8px;
         line-height: 1.25;
         color: $primaryBgColor;
-        top: 34px;
-        right: 10px;
-        text-align: right;
+        
     }
 
     @media screen and (min-width: 1200px) {
-        top: 59px;
-        right: 18px;
         font-size: 12px;
         line-height: 1.28;
         

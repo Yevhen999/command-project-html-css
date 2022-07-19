@@ -3,6 +3,13 @@
 
     background-color: $secondaryBgColor;
 
+    @media screen and (max-width: $maxMobWidth) {
+        background-image: url(../images/about/about-bg-320.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 74%;
+    }
+
     @media screen and (min-width: $minDeskWidth) {
         background-image: url(../images/about/about-bg-1200.png);
         background-size: contain;
@@ -10,6 +17,16 @@
         background-position: 50% 100%
     }
 }
+@media screen and (max-width: $maxMobWidth) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .about {
+            background-image: url(../images/about/about-bg-320@2x.png);
+        }
+    }
+}
+
 @media screen and (max-width: $maxMobWidth) {
 
     @media (min-device-pixel-ratio: 2),
@@ -64,26 +81,11 @@
     }
 }
 .about__box {
-    @media screen and (max-width: $maxMobWidth) {
-        background-image: url(../images/about/about-bg-320.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position-y: 74%;
-    }
-
     @media screen and (min-width: $minTabletWidth) {
         display: flex;
     }
 }
-@media screen and (max-width: $maxMobWidth) {
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .about__box {
-            background-image: url(../images/about/about-bg-320@2x.png);
-        }
-    }
-}
+
 .about__img {
     @media screen and (max-width: $maxMobWidth) {
         margin-bottom: 40px;
