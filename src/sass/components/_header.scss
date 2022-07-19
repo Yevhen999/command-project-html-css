@@ -377,6 +377,9 @@
     width: 254px;
     padding: 20px 32px;
   }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 
   &.is-hidden .modal {
     -webkit-transition: right 0.3s;
