@@ -72,7 +72,29 @@
       max-width: 368px;
       padding: 165px 64px 60px 64px;
     }
+    &::before {
+      content: ' ';
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      top: -140px;
+      background: url(/src/images/products/products1-1200.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      @media screen and (min-width: $minTabletWidth) {
+        width: 224px;
+        height: 224px;
+        top: -138px;
+      }
+      @media screen and (min-width: $minDeskWidth) {
+        top: -261px;
+        width: 368px;
+        height: 394px;
+      }
+    }
   }
+
   &__img {
     position: absolute;
     top: -140px;
@@ -99,22 +121,25 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-bottom: 70px;
+    &::after {
+      content: '...';
+      position: absolute;
+      top: calc(50% - 56px);
+      left: calc(50% - 10px);
+      @media screen and (min-width: $minTabletWidth) {
+        top: calc(50% - 88px);
+        left: calc(50% - 10px);
+      }
+      @media screen and (min-width: $minDeskWidth) {
+        top: calc(50% - 56px);
+        left: calc(50% - 10px);
+      }
+    }
     @media screen and (min-width: $minDeskWidth) {
       font-size: 30px;
       line-height: 1.13;
     }
-  }
-  &__dots {
-    display: flex;
-    gap: 4px;
-    margin: 30px;
-  }
-  &__dot {
-    display: block;
-    width: 6px;
-    height: 6px;
-    background-color: $primaryBgColor;
-    border-radius: 50%;
   }
   &__text {
     color: $primaryBgColor;
@@ -123,6 +148,7 @@
     line-height: 1.52;
     letter-spacing: 0.04em;
     text-align: center;
+    margin-bottom: 32px;
     @media screen and (min-width: $minTabletWidth) {
       line-height: 1.76;
     }
@@ -161,9 +187,51 @@
 }
 .item-coffee {
   background-color: $elementBgColor--first;
+  &::before {
+    content: ' ';
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: -140px;
+    background: url(/src/images/products/products2-1200.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media screen and (min-width: $minTabletWidth) {
+      width: 224px;
+      height: 224px;
+      top: -138px;
+    }
+    @media screen and (min-width: $minDeskWidth) {
+      top: -261px;
+      width: 368px;
+      height: 394px;
+    }
+  }
 }
 .item-milk {
   background-color: $elementBgColor--second;
+  &::before {
+    content: ' ';
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: -140px;
+    background: url(/src/images/products/products3-1200.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media screen and (min-width: $minTabletWidth) {
+      width: 224px;
+      height: 224px;
+      top: -138px;
+    }
+    @media screen and (min-width: $minDeskWidth) {
+      top: -261px;
+      width: 368px;
+      height: 394px;
+    }
+  }
 }
 .backdrop {
   width: 100%;
@@ -202,7 +270,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 650px;
-  height: 620px;
+  height: 720px;
+  max-height: 100%;
   padding: 40px;
   margin-left: auto;
   position: absolute;
@@ -213,9 +282,9 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $durationTransition $animationTransition;
   background-color: $heroBgColor;
+  overflow: auto;
   @media screen and (max-width: $maxMobWidth) {
     width: 100%;
-    overflow: auto;
   }
   @media screen and (min-width: $minTabletWidth) {
     width: 100%;
@@ -229,6 +298,13 @@
     font-size: 28px;
     margin-bottom: 80px;
     margin-top: 40px;
+    color: $primaryBgColor;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
   .products__text {
     text-align: left;
@@ -281,7 +357,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 650px;
-  height: 620px;
+  height: 720px;
+  max-height: 100%;
   padding: 40px;
   margin-left: auto;
   position: absolute;
@@ -292,13 +369,13 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $durationTransition $animationTransition;
   background-color: $elementBgColor--first;
+  overflow: auto;
   @media screen and (max-width: $maxMobWidth) {
     width: 100%;
-    overflow: auto;
   }
   @media screen and (min-width: $minTabletWidth) {
-    width: 100%;
-    max-width: 528px;
+    width: 528px;
+    max-width: 100%;
   }
   @media screen and(min-width: $minDeskWidth) {
     min-width: 564px;
@@ -308,6 +385,13 @@
     font-size: 28px;
     margin-bottom: 80px;
     margin-top: 40px;
+    color: $primaryBgColor;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
   .products__text {
     text-align: left;
@@ -347,7 +431,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 650px;
-  height: 620px;
+  height: 720px;
+  max-height: 100%;
   padding: 40px;
   margin-left: auto;
   position: absolute;
@@ -358,9 +443,9 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $durationTransition $animationTransition;
   background-color: $elementBgColor--second;
+  overflow: auto;
   @media screen and (max-width: $maxMobWidth) {
     width: 100%;
-    overflow: auto;
   }
   @media screen and (min-width: $minTabletWidth) {
     width: 100%;
@@ -374,6 +459,13 @@
     font-size: 28px;
     margin-bottom: 80px;
     margin-top: 40px;
+    color: $primaryBgColor;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
   .products__text {
     text-align: left;
