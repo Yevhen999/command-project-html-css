@@ -1,6 +1,5 @@
 .gallery__section {
-    background-image: linear-gradient
-    (to bottom, $secondaryBgColor 20%, $primaryBgColor 80%);
+    background-image: linear-gradient(to bottom, $secondaryBgColor 20%, $primaryBgColor 80%);
 }
 
 .gallery__list {
@@ -8,11 +7,11 @@
 
     justify-content: center;
     grid-gap: 2px;
-    grid: repeat(12, 8.5px) / repeat(28, 8.5px);
+    grid: repeat(12, 9.5px) / repeat(28, 9.5px);
 
     @media screen and (min-width: 768px) {
         grid-gap: 4px;
-        grid: repeat(12, 18px) / repeat(28, 18px);
+        grid: repeat(12, 23px) / repeat(28, 23px);
     }
 
     @media screen and (min-width: 1200px) {
@@ -75,8 +74,9 @@
 
     &:hover,
     &:focus {
-        transform: scale(1.5);
+        transform: scale(1.2);
         box-shadow: 0px 2px 10px rgba(212, 20, 67, 0.3);
+        transition: transform 250ms $animationTransition, box-shadow 250ms $animationTransition;
     }
 }
 
