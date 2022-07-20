@@ -174,14 +174,6 @@ transition: color 250ms $animationTransition;
   color: $primaryBgColor;
   background-color: $accentColor;
 
-  &:hover,
-  &:focus {
-    background-color: $focusBgColor;
-    color: $accentColor;
-  }
-
-    transition: color 250ms $animationTransition,
-        background-color 250ms $animationTransition;
 }
 
 .btn--white {
@@ -190,8 +182,7 @@ transition: color 250ms $animationTransition;
 
   &:hover,
   &:focus {
-    background-color: $accentColor;
-    color: $primaryBgColor;
+    background-color: $focusBgColor;
   }
 
   transition: color 250ms $animationTransition,
@@ -204,28 +195,50 @@ transition: color 250ms $animationTransition;
 }
 
 // Модалка
-
-.contacts-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 245, 246, 0.5);
+.btn__item--red {
+    position: relative;
 }
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+.btn__item--white {
+  position: relative;
 }
-
-.contacts-modal {
+.location-list {
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  background-color: #ffffff;
-  border-radius: 4px;
+  transform: translateX(-50%);
+  width: 162px;
+  border-radius: 8px;
+
+
+
+  background-color: $secondaryBgColor;
+
+  text-align: center;
+  opacity: 0;
+  @include transitioned(opacity);
+}
+
+
+.location-item {
+  margin-top: 8px;
+}
+
+.franchise-list {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 162px;
+  border-radius: 8px;
+
+
+
+  background-color: $secondaryBgColor;
+
+  text-align: center;
+  opacity: 0;
+  @include transitioned(opacity);
+}
+.is-open {
+  opacity: 1;
 }
