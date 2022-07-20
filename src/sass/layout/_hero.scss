@@ -67,9 +67,9 @@
     top: 92px;
     left: 97px;
     width: 171px;
-transition-property: transform;
-transition-duration: 700ms;
-transition-timing-function: $animationTransition;
+    transition-property: transform;
+    transition-duration: 700ms;
+    transition-timing-function: $animationTransition;
 
 
     @media screen and (min-width: 768px) {
@@ -84,7 +84,7 @@ transition-timing-function: $animationTransition;
         width: 236px;
     }
 }
-.hero__ice:hover {
+.hero:hover .hero__ice {
     transform: rotateY(180deg);
 }
 // .hero__b-e {
