@@ -9,8 +9,9 @@
 // base
 @import './base/body';
 @import './base/container';
-@import './base/button';
 
 
 // components
-@import './components/common';
+@import './components/button';
+
+@import './layout/common';

@@ -12,6 +12,7 @@
     line-height: 1.17;
     text-align: center;
     margin-bottom: 15px;
+    text-transform: uppercase;
     @media screen and (min-width: $minTabletWidth) {
       font-size: 26px;
       line-height: 1.15;
@@ -33,6 +34,7 @@
     letter-spacing: 0.04em;
     text-align: center;
     margin-bottom: 148px;
+    text-transform: uppercase;
     @media screen and (min-width: $minTabletWidth) {
       font-size: 48px;
       margin-bottom: 158px;
