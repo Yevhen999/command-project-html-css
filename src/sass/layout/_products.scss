@@ -173,6 +173,7 @@
     border-color: inherit;
     display: flex;
     align-items: center;
+    cursor: pointer;
     fill: $accentColor;
     background-color: $primaryBgColor;
     transition: transform $durationTransition $animationTransition;
