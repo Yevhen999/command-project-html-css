@@ -1,0 +1,2 @@
+function ReadMoreLess(){var e=document.getElementById("dots"),n=document.getElementById("more"),l=document.getElementById("iMoreLess"),t=document.getElementById("lblText");"none"===e.style.display?(e.style.display="inline",l.style.display="block",t.innerHTML="Read more",n.style.display="none"):(e.style.display="none",l.style.display="none",t.innerHTML="Read less",n.style.display="inline")}
+//# sourceMappingURL=index.f1e34669.js.map
